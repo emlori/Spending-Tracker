@@ -81,7 +81,7 @@ else:
     df_filtered['Montant'] = df_filtered[f'Impacté à {personne}']
 
 # Affichage des indicateurs clés
-st.title("Dashboard de Suivi des Dépenses")
+st.title("Dashboard de Suivi des Finances")
 
 # Calcul des dépenses moyennes mensuelles et des revenus mensuels
 if personne == "Caps":
@@ -102,27 +102,148 @@ taux_epargne_moyen = epargne_mensuelle.mean() / revenus_mensuels.mean() * 100 if
 revenu_mensuel_moyen = revenus_mensuels.mean()
 
 # Affichage des métriques
-col1, col2, col3 = st.columns(3)
-col1.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles.mean():.2f} CHF")
-col2.metric("Revenu Mensuel Moyen", f"{revenu_mensuel_moyen:.2f} CHF")
-col3.metric("Taux d'Épargne Moyen Mensuel", f"{taux_epargne_moyen:.2f} %")
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Revenu Mensuel Moyen", f"{revenu_mensuel_moyen:.0f} CHF")
+col2.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles.mean():.0f} CHF")
+col3.metric("Taux d'Épargne Moyen Mensuel", f"{taux_epargne_moyen:.0f} %")
+col4.metric("Epargne Moyenne", f"{epargne_mensuelle.mean():.0f} CHF")
+
+
+
+# Calcul du pourcentage des charges fixes sur le revenu
+categories_fixes = ["Loyer & Charges", "Transport", "Courses"]
+    
+# Calcul des pourcentages des charges fixes et variables sur le revenu en prenant en compte les filtres
+if personne == "Caps":
+    charges_fixes = df_filtered[(df_filtered['Catégorie'].isin(categories_fixes)) & (df_filtered['Type de transaction'] == 'Dépense')]
+    total_charges_fixes = charges_fixes.groupby(charges_fixes['Date'].dt.to_period('M'))['Impacté à Caps'].sum()
+    charges_variables = df_filtered[(~df_filtered['Catégorie'].isin(categories_fixes)) & (df_filtered['Type de transaction'] == 'Dépense')]
+    total_charges_variables = charges_variables.groupby(charges_variables['Date'].dt.to_period('M'))['Impacté à Caps'].sum()
+elif personne == "Emilian":
+    charges_fixes = df_filtered[(df_filtered['Catégorie'].isin(categories_fixes)) & (df_filtered['Type de transaction'] == 'Dépense')]
+    total_charges_fixes = charges_fixes.groupby(charges_fixes['Date'].dt.to_period('M'))['Impacté à Emilian'].sum()
+    charges_variables = df_filtered[(~df_filtered['Catégorie'].isin(categories_fixes)) & (df_filtered['Type de transaction'] == 'Dépense')]
+    total_charges_variables = charges_variables.groupby(charges_variables['Date'].dt.to_period('M'))['Impacté à Emilian'].sum()
+else:
+    charges_fixes = df_filtered[(df_filtered['Catégorie'].isin(categories_fixes)) & (df_filtered['Type de transaction'] == 'Dépense')]
+    total_charges_fixes = charges_fixes.groupby(charges_fixes['Date'].dt.to_period('M'))[['Impacté à Caps', 'Impacté à Emilian']].sum().sum(axis=1)
+    charges_variables = df_filtered[(~df_filtered['Catégorie'].isin(categories_fixes)) & (df_filtered['Type de transaction'] == 'Dépense')]
+    total_charges_variables = charges_variables.groupby(charges_variables['Date'].dt.to_period('M'))[['Impacté à Caps', 'Impacté à Emilian']].sum().sum(axis=1)
+
+# Calcul des pourcentages
+pourcentage_charges_fixes = (total_charges_fixes.sum() / revenus_mensuels.sum()) * 100 if revenus_mensuels.sum() > 0 else 0
+pourcentage_charges_variables = (total_charges_variables.sum() / revenus_mensuels.sum()) * 100 if revenus_mensuels.sum() > 0 else 0
+
+
+# Calcul de l'épargne cumulée et création de la jauge pour l'objectif annuel d'épargne
+epargne_cumulee = epargne_mensuelle.sum()
+objectif_annuel = 5000  # Objectif d'épargne annuel de 5K CHF
+
+# Calcul du seuil pour être en ligne avec l'objectif à la date actuelle
+import datetime
+date_actuelle = datetime.datetime.now()
+debut_annee = datetime.datetime(date_actuelle.year, 1, 1)
+jours_ecoules = (date_actuelle - debut_annee).days
+total_jours_annee = 365
+objectif_a_date = (jours_ecoules / total_jours_annee) * objectif_annuel
+
+objectif_MTD = (epargne_cumulee - objectif_a_date)*100 / objectif_a_date
+
+
+# Affichage des autres métriques
+col1.metric("% Charges Fixes", f"{pourcentage_charges_fixes:.0f} %")
+col2.metric("% Charges Variables", f"{pourcentage_charges_variables:.0f} %")
+col3.metric("Objectif Epargne MTD", f"{objectif_MTD:.0f} %")
+
+
+
+# Création de la jauge pour montrer l'épargne cumulée par rapport à l'objectif
+fig_gauge_epargne = go.Figure(go.Indicator(
+    mode="gauge+number+delta",
+    value=epargne_cumulee,
+    domain={'x': [0, 1], 'y': [0, 1]},
+    title={'text': "Épargne Cumulée par rapport à l'Objectif Annuel"},
+    delta={'reference': objectif_a_date, 'increasing': {'color': "green"}, 'decreasing': {'color': "red"}},
+    gauge={
+        'axis': {'range': [0, objectif_annuel], 'tickwidth': 1, 'tickcolor': "darkblue"},
+        'bar': {'color': "green"},
+        'steps': [
+            {'range': [0, objectif_a_date], 'color': "lightgray"},
+            {'range': [objectif_a_date, objectif_annuel], 'color': "lightgreen"}
+        ],
+        'threshold': {
+            'line': {'color': "blue", 'width': 4},
+            'thickness': 0.75,
+            'value': objectif_a_date
+        }
+    },
+    number={'suffix': " CHF"}
+))
+
+fig_gauge_epargne.update_layout(
+    height=350
+)
+
+
+
 
 # Répartition des Dépenses par Catégorie (Moyenne Mensuelle)
 depenses = df_filtered[df_filtered['Type de transaction'] == 'Dépense']
+
+# Calculer la moyenne mensuelle des dépenses par catégorie
 if personne == "Caps":
-    depenses_par_categorie_moyenne = depenses.groupby('Catégorie')['Impacté à Caps'].mean().reset_index()
+    depenses_par_categorie_moyenne = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Caps'].sum().reset_index()
+    # Calculer la moyenne par catégorie
+    depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Caps'].mean().reset_index()
+    depenses_par_categorie_moyenne.rename(columns={'Impacté à Caps': 'Total_Impact'}, inplace=True)
 elif personne == "Emilian":
-    depenses_par_categorie_moyenne = depenses.groupby('Catégorie')['Impacté à Emilian'].mean().reset_index()
+    depenses_par_categorie_moyenne = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Emilian'].sum().reset_index()
+    # Calculer la moyenne par catégorie
+    depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Emilian'].mean().reset_index()
+    depenses_par_categorie_moyenne.rename(columns={'Impacté à Emilian': 'Total_Impact'}, inplace=True)
 else:
-    depenses_par_categorie_moyenne = depenses.groupby('Catégorie')[['Impacté à Caps', 'Impacté à Emilian']].mean().sum(axis=1).reset_index()
+    depenses_caps = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Caps'].sum().reset_index()
+    depenses_emilian = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Emilian'].sum().reset_index()
+
+    # Fusionner les deux DataFrames pour obtenir une somme des deux impacts
+    depenses_combined = pd.merge(depenses_caps, depenses_emilian, on=['Catégorie', 'Date'], suffixes=('_Caps', '_Emilian'))
+    depenses_combined['Total_Impact'] = depenses_combined['Impacté à Caps'] + depenses_combined['Impacté à Emilian']
+    
+    # Calculer la moyenne mensuelle des dépenses par catégorie
+    depenses_par_categorie_moyenne = depenses_combined.groupby('Catégorie')['Total_Impact'].mean().reset_index()
+
+# Ajouter une colonne de pourcentage
+total_dépenses_moyenne = depenses_par_categorie_moyenne['Total_Impact'].sum()
+depenses_par_categorie_moyenne['Pourcentage'] = (depenses_par_categorie_moyenne['Total_Impact'] / total_dépenses_moyenne) * 100
 
 # Créer le camembert des dépenses moyennes mensuelles par catégorie
 fig_pie = px.pie(
     depenses_par_categorie_moyenne,
     names='Catégorie',
-    values=depenses_par_categorie_moyenne.columns[1],  # Utilise la colonne correcte selon le filtre appliqué (Caps ou Emilian)
-    title="Répartition des Dépenses Moyennes Mensuelles par Catégorie"
+    values='Total_Impact',
+    title="Répartition des Dépenses Mensuelles par Catégorie"
 )
+
+# Mettre à jour les étiquettes du graphique pour n'afficher que les valeurs >= 1%
+fig_pie.update_traces(
+    textinfo='label+percent',
+    texttemplate='%{label}: %{percent:.0f}%',
+    insidetextorientation='radial'
+)
+
+# Filtrer les segments avec moins de 1% pour les masquer
+fig_pie.update_traces(
+    texttemplate=depenses_par_categorie_moyenne.apply(
+        lambda x: f"{x['Pourcentage']:.0f}%" if x['Pourcentage'] >= 1 else "",
+        axis=1
+    )
+)
+
+# Mettre à jour le graphique pour masquer les petites catégories
+fig_pie.update_traces(
+    textinfo='label+percent'
+)
+
 
 # Graphique : Revenus et Dépenses par Mois
 df_combined = pd.DataFrame({
@@ -166,14 +287,19 @@ else:
 
 # Convertir la période en format datetime pour la visualisation
 charges_variables_moyenne['Date'] = charges_variables_moyenne['Date'].dt.to_timestamp()
-
 # Calculer la somme totale par catégorie pour identifier les 5 principales
 if personne == "Caps":
-    total_charges = charges_variables_moyenne.groupby('Catégorie')['Impacté à Caps'].sum()
+    charges_variables_moyenne['Total_Impact'] = charges_variables_moyenne['Impacté à Caps']
 elif personne == "Emilian":
-    total_charges = charges_variables_moyenne.groupby('Catégorie')['Impacté à Emilian'].sum()
+    charges_variables_moyenne['Total_Impact'] = charges_variables_moyenne['Impacté à Emilian']
 else:
-    total_charges = charges_variables_moyenne.groupby('Catégorie')[['Impacté à Caps', 'Impacté à Emilian']].sum().sum(axis=1)
+    # Ajouter les deux colonnes pour obtenir le Total_Impact
+    charges_variables_moyenne['Total_Impact'] = (
+        charges_variables_moyenne['Impacté à Caps'] +
+        charges_variables_moyenne['Impacté à Emilian']
+    )
+
+total_charges = charges_variables_moyenne.groupby('Catégorie')['Total_Impact'].sum()
 
 # Identifier les 5 catégories avec les dépenses les plus élevées
 top5_categories = total_charges.nlargest(5).index
@@ -191,11 +317,11 @@ charges_top5['Date'] = pd.Categorical(
     ordered=True
 )
 
-# Créer le graphique
+# Création du graphique linéaire
 fig_line = px.line(
     charges_top5,
     x='Date',
-    y=charges_top5.columns[2],  # Utilisez la colonne correcte selon le filtre appliqué (Caps ou Emilian)
+    y='Total_Impact',
     color='Catégorie',
     title="Évolution des 5 Premiers Postes des Charges Variables Moyennes",
     labels={'value': 'Montant', 'Date': 'Mois - Année'}
@@ -209,7 +335,16 @@ fig_line.update_xaxes(
 )
 
 
-# Organisation des graphiques
-st.plotly_chart(fig_pie, use_container_width=True)
-st.plotly_chart(fig_bar, use_container_width=True)
-st.plotly_chart(fig_line, use_container_width=True)
+# Ligne 1 : fig_pie et fig_gauge_epargne
+col1, col2 = st.columns(2)
+with col1:
+    st.plotly_chart(fig_pie, use_container_width=True)
+with col2:
+    st.plotly_chart(fig_gauge_epargne, use_container_width=True)
+
+# Ligne 2 : fig_bar et fig_line
+col3, col4 = st.columns(2)
+with col3:
+    st.plotly_chart(fig_bar, use_container_width=True)
+with col4:
+    st.plotly_chart(fig_line, use_container_width=True)
