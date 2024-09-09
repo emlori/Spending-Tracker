@@ -1,149 +1,318 @@
-Titre,Montant,Devise,Taux de change,Montant dans la devise du tricount (CHF),Type de transaction,Catégorie,Payé par,Payé par Caps,Payé par Emilian,Impacté à Caps,Impacté à Emilian,Date & heure,URL des images
-Swibeco,-180,CHF,1,-180,Rentrée d'argent,Salaire 💵,Emilian,0,-180,0,180,24 mai 2024 00:00,
-Swibeco,-180,CHF,1,-180,Rentrée d'argent,Salaire 💵,Emilian,0,-180,0,180,25 mars 2024 00:00,
-Salaire stage,-2023,CHF,1,-2023,Rentrée d'argent,Salaire 💵,Caps,-2023,0,2023,0,25 mai 2024 00:00,
-Salaire stage,-2023,CHF,1,-2023,Rentrée d'argent,Salaire 💵,Caps,-2023,0,2023,0,25 avril 2024 00:00,
-Salaire stage,-2023,CHF,1,-2023,Rentrée d'argent,Salaire 💵,Caps,-2023,0,2023,0,26 mars 2024 00:00,
-Salaire stage,-1967,CHF,1,-1967,Rentrée d'argent,Salaire 💵,Emilian,0,-1967,0,1967,25 mai 2024 00:00,
-Salaire stage,-1967,CHF,1,-1967,Rentrée d'argent,Salaire 💵,Emilian,0,-1967,0,1967,25 avril 2024 00:00,
-Salaire mars,-1967,CHF,1,-1967,Rentrée d'argent,Salaire 💵,Emilian,0,-1967,0,1967,26 mars 2024 00:00,
-Beer Pydata,4,CHF,1,4,Dépense,Restaurants & Bars,Emilian,0,4,0,-4,15 juin 2024 00:00,
-Tacos Nyon,13,CHF,1,13,Dépense,Restaurants & Bars,Emilian,0,13,0,-13,15 juin 2024 00:00,
-To good to go,7.9,CHF,1,7.9,Dépense,Courses,Emilian,0,7.9,0,-7.9,15 juin 2024 00:00,
-Cocktail anniv Anna,27,CHF,1,27,Dépense,Restaurants & Bars,Emilian,0,27,-27,0,10 juin 2024 00:00,
-Soirée Lausanne anniv Anna,16,CHF,1,16,Dépense,Restaurants & Bars,Emilian,0,16,0,-16,10 juin 2024 00:00,
-Courses Leclerc,67,EUR,0.978634,65.57,Dépense,Courses,Emilian,0,65.57,-32.78,-32.79,10 juin 2024 00:00,
-Dentifrice et brosse,3.8,EUR,0.978634,3.72,Dépense,Hygiène et cosmétique 🧴,Emilian,0,3.72,-1.86,-1.86,10 juin 2024 00:00,
-Exki Orly,9.8,EUR,0.978634,9.59,Dépense,Restaurants & Bars,Caps,9.59,0,-9.59,0,28 mai 2024 00:00,
-Exki Orly,15.85,EUR,0.978634,15.51,Dépense,Restaurants & Bars,Caps,15.51,0,-15.51,0,28 mai 2024 00:00,
-Pharmacie Orly,18.4,EUR,0.978634,18.01,Dépense,Soin de santé,Caps,18.01,0,-18.01,0,28 mai 2024 00:00,
-Cookie mie caline,4.3,EUR,0.978634,4.21,Dépense,Plaisir 🍫,Caps,4.21,0,-4.21,0,27 mai 2024 00:00,
-Yves Rocher,20.35,EUR,0.978634,19.92,Dépense,Hygiène et cosmétique 🧴,Caps,19.92,0,-19.92,0,27 mai 2024 00:00,
-Logement Lyon,37,EUR,0.978634,36.21,Dépense,Logement,Caps,36.21,0,-36.21,0,6 avril 2024 00:00,
-Lyon Genève,25.1,EUR,0.978634,24.56,Dépense,Transport,Caps,24.56,0,-24.56,0,1 avril 2024 00:00,
-Geneve Lyon,33.4,EUR,0.978634,32.69,Dépense,Transport,Caps,32.69,0,-32.69,0,1 avril 2024 00:00,
-H&H,37.9,CHF,1,37.9,Dépense,Shopping,Caps,37.9,0,-37.9,0,25 mai 2024 00:00,
-Opodo,99.9,CHF,1,99.9,Dépense,Transport,Caps,99.9,0,-99.9,0,27 mai 2024 00:00,
-Chewing-gum,2.95,CHF,1,2.95,Dépense,Courses,Caps,2.95,0,-2.95,0,6 juin 2024 00:00,
-Myrtille,2.4,CHF,1,2.4,Dépense,Courses,Caps,2.4,0,-2.4,0,7 juin 2024 00:00,
-H&M,22.6,CHF,1,22.6,Dépense,Shopping,Caps,22.6,0,-22.6,0,8 juin 2024 00:00,
-Bracelet Ana,16.9,CHF,1,16.9,Dépense,Cadeau 🎁,Caps,16.9,0,-16.9,0,8 juin 2024 00:00,
-Mc Fleury,4.6,CHF,1,4.6,Dépense,Plaisir 🍫,Caps,4.6,0,-2.3,-2.3,9 juin 2024 00:00,
-Glaces Nuii,5.7,CHF,1,5.7,Dépense,Courses,Caps,5.7,0,-2.85,-2.85,31 mai 2024 00:00,
-Gifi support vélo brosse à dent,10.6,CHF,1,10.6,Dépense,Dépense unique ⚡,Emilian,0,10.6,-5.3,-5.3,1 juin 2024 00:00,
-Sacs poubelles,19.5,CHF,1,19.5,Dépense,Ordures 🗑️,Emilian,0,19.5,-9.75,-9.75,29 mai 2024 00:00,
-Too good to go,7.9,CHF,1,7.9,Dépense,Courses,Emilian,0,7.9,-3.95,-3.95,26 mai 2024 00:00,
-Too good to go,7.9,CHF,1,7.9,Dépense,Courses,Emilian,0,7.9,-3.95,-3.95,2 juin 2024 00:00,
-Aldi,14.7,EUR,0.995142,14.63,Dépense,Courses,Emilian,0,14.63,-7.31,-7.32,28 mai 2024 00:00,
-Cff,260,CHF,1,260,Dépense,Transport,Emilian,0,260,0,-260,1 juin 2024 00:00,
-Cff,260,CHF,1,260,Dépense,Transport,Caps,260,0,-260,0,1 juin 2024 00:00,
-Courses 2 juin,77.83,EUR,0.987396,76.85,Dépense,Courses,Caps,76.85,0,-38.42,-38.43,2 juin 2024 00:00,
-Five Guys,41.4,CHF,1,41.4,Dépense,Restaurants & Bars,Emilian,0,41.4,-20.7,-20.7,16 mai 2024 00:00,
-Afterwork Teoxane,22,CHF,1,22,Dépense,Restaurants & Bars,Emilian,0,22,0,-22,31 mai 2024 00:00,
-Resto Genève,52,CHF,1,52,Dépense,Restaurants & Bars,Emilian,0,52,-26,-26,23 mai 2024 00:00,
-Gaufres Morges,13,CHF,1,13,Dépense,Plaisir 🍫,Emilian,0,13,-6.5,-6.5,2 juin 2024 00:00,
-Frais de conversion,2.75,CHF,1,2.75,Dépense,Frais bancaires 🏦,Caps,2.75,0,-2.75,0,2 juin 2024 00:00,
-Frais de conversion,2.75,CHF,1,2.75,Dépense,Frais bancaires 🏦,Emilian,0,2.75,0,-2.75,2 juin 2024 00:00,
-Loyer,775,CHF,1,775,Dépense,Loyer & Charges,Caps,775,0,-775,0,2 juin 2024 00:00,
-Loyer,775,CHF,1,775,Dépense,Loyer & Charges,Emilian,0,775,0,-775,2 juin 2024 00:00,
-Courses Leclerc,72.5,EUR,0.991914,71.91,Dépense,Courses,Emilian,0,71.91,-35.95,-35.96,22 mai 2024 00:00,
-Argile et sham solide spray,10.3,EUR,0.991914,10.22,Dépense,Hygiène et cosmétique 🧴,Emilian,0,10.22,-5.11,-5.11,22 mai 2024 00:00,
-Anniv boulot,10.07,EUR,0.991914,9.99,Dépense,Taff 🥂,Emilian,0,9.99,0,-9.99,22 mai 2024 00:00,
-Frais de carte CA,2,EUR,0.991914,1.98,Dépense,Frais bancaires 🏦,Emilian,0,1.98,0,-1.98,1 mai 2024 00:00,
-Frais de carte CA,2,EUR,0.991914,1.98,Dépense,Frais bancaires 🏦,Emilian,0,1.98,0,-1.98,1 avril 2024 00:00,
-Frais de carte CA,2,EUR,0.991914,1.98,Dépense,Frais bancaires 🏦,Emilian,0,1.98,0,-1.98,1 mars 2024 00:00,
-Courses Leclerc,93.13,EUR,0.991914,92.38,Dépense,Courses,Emilian,0,92.38,-46.19,-46.19,22 mai 2024 00:00,
-Drive Carrefour,64.84,EUR,0.991914,64.32,Dépense,Courses,Emilian,0,64.32,-32.16,-32.16,22 mai 2024 00:00,
-Courses Denner Pentecôte,32.85,CHF,1,32.85,Dépense,Courses,Emilian,0,32.85,-16.42,-16.43,22 mai 2024 00:00,
-Glace Nyon,8,CHF,1,8,Dépense,Plaisir 🍫,Emilian,0,8,-4,-4,22 mai 2024 00:00,
-Flixbus Bretagne Mai,130,EUR,0.980776,127.5,Dépense,Transport,Emilian,0,127.5,0,-127.5,20 mars 2024 00:00,
-Verre Nyon copains,55.4,CHF,1,55.4,Dépense,Plaisir 🍫,Caps,55.4,0,-27.7,-27.7,22 mai 2024 00:00,
-Caraque copains,13.5,CHF,1,13.5,Dépense,Plaisir 🍫,Caps,13.5,0,-6.75,-6.75,22 mai 2024 00:00,
-Bouteille avec les copains,9,CHF,1,9,Dépense,Restaurants & Bars,Caps,9,0,-4.5,-4.5,22 mai 2024 00:00,
-To good to go,7.9,CHF,1,7.9,Dépense,Courses,Caps,7.9,0,-3.95,-3.95,22 mai 2024 00:00,
-Glace Nyon,8,CHF,1,8,Dépense,Plaisir 🍫,Emilian,0,8,-4,-4,22 mai 2024 00:00,
-Resto avec les copains,126,EUR,0.991914,124.98,Dépense,Restaurants & Bars,Caps,124.98,0,-62.49,-62.49,22 mai 2024 00:00,
-Casque Audio,90,EUR,0.980776,88.27,Dépense,Dépense unique ⚡,Emilian,0,88.27,0,-88.27,11 mai 2024 00:00,
-Caramels boulot,5.6,EUR,0.980776,5.49,Dépense,Taff 🥂,Emilian,0,5.49,0,-5.49,11 mai 2024 00:00,
-Sandwich retour flixbus,5,EUR,0.980776,4.9,Dépense,Courses,Emilian,0,4.9,0,-4.9,11 mai 2024 00:00,
-Bar tournée,24.5,EUR,0.986993,24.18,Dépense,Restaurants & Bars,Emilian,0,24.18,0,-24.18,4 mai 2024 00:00,
-Loyer avril,775,CHF,1,775,Dépense,Loyer & Charges,Caps,775,0,-775,0,1 avril 2024 00:00,
-Loyer avril,775,CHF,1,775,Dépense,Loyer & Charges,Emilian,0,775,0,-775,1 avril 2024 00:00,
-Subway Lyon,8.5,EUR,0.986993,8.39,Dépense,Restaurants & Bars,Emilian,0,8.39,0,-8.39,5 mai 2024 00:00,
-Loyer mai,775,CHF,1,775,Dépense,Loyer & Charges,Caps,775,0,-775,0,5 mai 2024 00:00,
-Loyer,775,CHF,1,775,Dépense,Loyer & Charges,Emilian,0,775,0,-775,5 mai 2024 00:00,
-Chocolat Cailler,20.35,CHF,1,20.35,Dépense,Plaisir 🍫,Caps,20.35,0,-10.17,-10.18,21 avril 2024 00:00,
-Abo CFF,260,CHF,1,260,Dépense,Transport,Emilian,0,260,0,-260,1 mai 2024 00:00,
-Abo CFF,260,CHF,1,260,Dépense,Transport,Caps,260,0,-260,0,1 mai 2024 00:00,
-Carafe anniv Valérie,59,CHF,1,59,Dépense,Cadeau 🎁,Emilian,0,59,-20,-39,20 avril 2024 00:00,
-Courses Coop Lausanne,21.1,CHF,1,21.1,Dépense,Courses,Caps,21.1,0,-10.55,-10.55,20 avril 2024 00:00,
-Burritos meetup,15,CHF,1,15,Dépense,Restaurants & Bars,Emilian,0,15,0,-15,18 avril 2024 00:00,
-Coiffeur,20,CHF,1,20,Dépense,Coiffeur 💈,Emilian,0,20,0,-20,17 avril 2024 00:00,
-Activia,1.55,EUR,0.981362,1.52,Dépense,Courses,Caps,1.52,0,-0.76,-0.76,15 avril 2024 00:00,
-Coton tiges,0.99,EUR,0.981362,0.97,Dépense,Hygiène et cosmétique 🧴,Caps,0.97,0,-0.48,-0.49,15 avril 2024 00:00,
-Courses,116.09,EUR,0.981362,113.93,Dépense,Courses,Caps,113.93,0,-56.96,-56.97,14 avril 2024 00:00,
-Sushi,33.3,CHF,1,33.3,Dépense,Restaurants & Bars,Emilian,0,33.3,-16.65,-16.65,14 avril 2024 00:00,
-Raclette Cully jazz,12,CHF,1,12,Dépense,Restaurants & Bars,Caps,12,0,-6,-6,14 avril 2024 00:00,
-Gynofit,22.6,CHF,1,22.6,Dépense,Soin de santé,Caps,22.6,0,-22.6,0,13 avril 2024 00:00,
-Gel douche,5,EUR,0.98658,4.93,Dépense,Hygiène et cosmétique 🧴,Caps,4.93,0,-2.46,-2.47,10 avril 2024 00:00,
-Courses,125,EUR,0.98658,123.32,Dépense,Courses,Caps,123.32,0,-61.66,-61.66,10 avril 2024 00:00,
-Évènement Watch Geneva,40,CHF,1,40,Dépense,Plaisir 🍫,Emilian,0,40,0,-40,8 avril 2024 00:00,
-Bière meetup,4,CHF,1,4,Dépense,Restaurants & Bars,Emilian,0,4,0,-4,5 avril 2024 00:00,
-Too good to go,5.9,CHF,1,5.9,Dépense,Courses,Emilian,0,5.9,-2.95,-2.95,5 avril 2024 00:00,
-Argent avec mes parents WE 4-5 avril,100,CHF,1,100,Dépense,Liquide 💸,Caps,100,0,-100,0,5 avril 2024 00:00,
-Courses,126.46,EUR,0.985586,124.64,Dépense,Courses,Caps,124.64,0,-62.32,-62.32,4 avril 2024 00:00,
-Dîner too good to go,5.9,CHF,1,5.9,Dépense,Courses,Emilian,0,5.9,0,-5.9,3 avril 2024 00:00,
-Courses,6.25,CHF,1,6.25,Dépense,Courses,Emilian,0,6.25,-3.12,-3.13,3 avril 2024 00:00,
-Frais loyer,29,CHF,1,29,Dépense,Frais bancaires 🏦,Emilian,0,29,-14.5,-14.5,3 avril 2024 00:00,
-Mini courses,7.7,CHF,1,7.7,Dépense,Courses,Emilian,0,7.7,-3.85,-3.85,1 avril 2024 00:00,
-Concealer Kiko,11.5,CHF,1,11.5,Dépense,Produits de beauté 💄,Caps,11.5,0,-11.5,0,31 mars 2024 00:00,
-Vêtements puces Nyon,12,CHF,1,12,Dépense,Shopping,Emilian,0,12,-12,0,31 mars 2024 00:00,
-Casse-tête puces Nyon,25,CHF,1,25,Dépense,Plaisir 🍫,Emilian,0,25,0,-25,31 mars 2024 00:00,
-Street food festival,27,CHF,1,27,Dépense,Restaurants & Bars,Emilian,0,27,-13,-14,30 mars 2024 00:00,
-Goûter boulangerie,5.8,CHF,1,5.8,Dépense,Plaisir 🍫,Emilian,0,5.8,-2.9,-2.9,30 mars 2024 00:00,
-Sauna,32,CHF,1,32,Dépense,Plaisir 🍫,Emilian,0,32,-16,-16,30 mars 2024 00:00,
-Courses de Pâques,12.9,CHF,1,12.9,Dépense,Plaisir 🍫,Emilian,0,12.9,-6.45,-6.45,30 mars 2024 00:00,
-Apéro de la galère,18.9,CHF,1,18.9,Dépense,Courses,Caps,18.9,0,-9.45,-9.45,28 mars 2024 00:00,
-Fromage blanc,2.55,CHF,1,2.55,Dépense,Courses,Caps,2.55,0,-1.27,-1.28,27 mars 2024 00:00,
-Dentifrice,5,EUR,0.974965,4.87,Dépense,Hygiène et cosmétique 🧴,Emilian,0,4.87,-2.43,-2.44,27 mars 2024 00:00,
-Courses Annemasse,99.2,EUR,0.974965,96.72,Dépense,Courses,Emilian,0,96.72,-48.36,-48.36,26 mars 2024 00:00,
-Mouv'Nyon,16.7,CHF,1,16.7,Dépense,Sport ⚾,Caps,16.7,0,-16.7,0,1 juin 2024 00:00,
-Mouv'Nyon,16.7,CHF,1,16.7,Dépense,Sport ⚾,Caps,16.7,0,-16.7,0,1 mai 2024 00:00,
-Mouv'Nyon,16.7,CHF,1,16.7,Dépense,Sport ⚾,Caps,16.7,0,-16.7,0,1 avril 2024 00:00,
-Too good to go,7.9,CHF,1,7.9,Dépense,Courses,Emilian,0,7.9,-3.95,-3.95,25 mars 2024 00:00,
-Too good to go,7.9,CHF,1,7.9,Dépense,Courses,Emilian,0,7.9,-3.95,-3.95,24 mars 2024 00:00,
-Sport Mouv'Nyon,16.7,CHF,1,16.7,Dépense,Sport ⚾,Emilian,0,16.7,0,-16.7,1 juin 2024 00:00,
-Sport Mouv'Nyon,16.7,CHF,1,16.7,Dépense,Sport ⚾,Emilian,0,16.7,0,-16.7,1 mai 2024 00:00,
-Sport Mouv'Nyon,16.7,CHF,1,16.7,Dépense,Sport ⚾,Emilian,0,16.7,0,-16.7,1 avril 2024 00:00,
-Abo CFF,260,CHF,1,260,Dépense,Transport,Caps,260,0,-260,0,1 avril 2024 00:00,
-Abo CFF,260,CHF,1,260,Dépense,Transport,Emilian,0,260,0,-260,1 avril 2024 00:00,
-Produits gifi,13,CHF,1,13,Dépense,Hygiène et cosmétique 🧴,Emilian,0,13,-13,0,23 mars 2024 00:00,
-Vélo,50,CHF,1,50,Dépense,Dépense unique ⚡,Emilian,0,50,0,-50,23 mars 2024 00:00,
-Étendoir vaisselle,13,CHF,1,13,Dépense,Dépense unique ⚡,Emilian,0,13,-6.5,-6.5,23 mars 2024 00:00,
-Produits d'hygiène,8,EUR,0.965372,7.72,Dépense,Hygiène et cosmétique 🧴,Caps,7.72,0,-3.86,-3.86,18 mars 2024 00:00,
-Courses,85,EUR,0.965372,82.06,Dépense,Courses,Caps,82.06,0,-41.03,-41.03,18 mars 2024 00:00,
-Coursettes weekend,5.95,CHF,1,5.95,Dépense,Courses,Caps,5.95,0,-2.97,-2.98,16 mars 2024 00:00,
-Shampooing solide,3.15,EUR,0.965734,3.04,Dépense,Hygiène et cosmétique 🧴,Caps,3.04,0,-1.52,-1.52,11 mars 2024 00:00,
-Abo train CFF,260,CHF,1,260,Dépense,Transport,Caps,260,0,-260,0,11 mars 2024 00:00,
-Abo train CFF,260,CHF,1,260,Dépense,Transport,Emilian,0,260,0,-260,11 mars 2024 00:00,
-Loyer Mars,775,CHF,1,775,Dépense,Loyer & Charges,Caps,775,0,-775,0,11 mars 2024 00:00,
-Loyer Mars,775,CHF,1,775,Dépense,Loyer & Charges,Emilian,0,775,0,-775,11 mars 2024 00:00,
-Courses Leclerc,74.85,EUR,0.965734,72.29,Dépense,Courses,Caps,72.29,0,-36.14,-36.15,11 mars 2024 00:00,
-Apéro Caps,19,EUR,0.965734,18.35,Dépense,Taff 🥂,Caps,18.35,0,-18.35,0,11 mars 2024 00:00,
-To good to go fleur de pain 🍞,7.9,CHF,1,7.9,Dépense,Courses,Emilian,0,7.9,-3.95,-3.95,11 mars 2024 00:00,
-Gel aloe Vera,12.5,CHF,1,12.5,Dépense,Hygiène et cosmétique 🧴,Caps,12.5,0,-12.5,0,11 mars 2024 00:00,
-To good to go café Milo,5.9,CHF,1,5.9,Dépense,Courses,Emilian,0,5.9,-2.95,-2.95,11 mars 2024 00:00,
-Galettes bio,2.6,CHF,1,2.6,Dépense,Courses,Caps,2.6,0,-1.3,-1.3,11 mars 2024 00:00,
-Adaptateur international,15.5,EUR,0.965734,14.97,Dépense,Dépense unique ⚡,Emilian,0,14.97,-7.48,-7.49,11 mars 2024 00:00,
-To good to go Coop,5.9,CHF,1,5.9,Dépense,Courses,Emilian,0,5.9,-2.95,-2.95,11 mars 2024 00:00,
-Courses Annemasse,81.58,EUR,0.965734,78.78,Dépense,Courses,Caps,78.78,0,-39.39,-39.39,11 mars 2024 00:00,
-To good to go Migros,5.9,CHF,1,5.9,Dépense,Courses,Emilian,0,5.9,-2.95,-2.95,11 mars 2024 00:00,
-P'tite courses Aldi,6.9,CHF,1,6.9,Dépense,Courses,Emilian,0,6.9,-3.45,-3.45,11 mars 2024 00:00,
-Lait,1.8,CHF,1,1.8,Dépense,Courses,Emilian,0,1.8,-0.9,-0.9,11 mars 2024 00:00,
-Midi Montreux 🥙,22,CHF,1,22,Dépense,Restaurants & Bars,Emilian,0,22,-11,-11,11 mars 2024 00:00,
-Burger King,29.8,CHF,1,29.8,Dépense,Restaurants & Bars,Emilian,0,29.8,-14.9,-14.9,11 mars 2024 00:00,
-Courses Migros Genève,24.6,CHF,1,24.6,Dépense,Courses,Emilian,0,24.6,-12.3,-12.3,11 mars 2024 00:00,
-Courses Coop 29/02,41.7,CHF,1,41.7,Dépense,Courses,Caps,41.7,0,-20.85,-20.85,29 février 2024 00:00,
-Gifi (matelas etc.),104.45,CHF,1,104.45,Dépense,Dépense unique ⚡,Emilian,0,104.45,-52.22,-52.23,11 mars 2024 00:00,
-Courses Denner 28/02,68.5,CHF,1,68.5,Dépense,Courses,Emilian,0,68.5,-34.25,-34.25,28 février 2024 00:00,
-Tricount Switzerland 🇨🇭 - exporté le 15 juin 2024 23:10,,,,,,,,,,,,,
+"Titre","Montant","Devise","Taux de change","Montant dans la devise du tricount (CHF)","Type de transaction","Catégorie","Payé par","Payé par Caps","Payé par Emilian","Impacté à Caps","Impacté à Emilian","Date & heure","URL des images"
+"Bière 🍺","9.10","CHF","1","9.10","Dépense","Restaurants & Bars","Emilian","0.00","9.10","0.00","-9.10","9 septembre 2024 00:00",""
+"Casque retrouvé","5.00","CHF","1","5.00","Dépense","Autre","Emilian","0.00","5.00","-5.00","0.00","9 septembre 2024 00:00",""
+"Métro Lille Paris","13.40","EUR","0.945805","12.67","Dépense","Transport","Emilian","0.00","12.67","0.00","-12.67","9 septembre 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.945805","1.89","Dépense","Frais bancaires 🏦","Emilian","0.00","1.89","0.00","-1.89","9 septembre 2024 00:00",""
+"Frais conversion loyer","5.00","CHF","1","5.00","Dépense","Frais bancaires 🏦","Emilian","0.00","5.00","-2.50","-2.50","9 septembre 2024 00:00",""
+"Forfait","50.01","EUR","0.945805","47.30","Dépense","Forfait Téléphone ☎️","Emilian","0.00","47.30","0.00","-47.30","1 août 2024 00:00",""
+"Tel","20.47","EUR","0.945805","19.36","Dépense","Forfait Téléphone ☎️","Emilian","0.00","19.36","0.00","-19.36","1 juillet 2024 00:00",""
+"Tel","22.37","EUR","0.945805","21.16","Dépense","Forfait Téléphone ☎️","Emilian","0.00","21.16","0.00","-21.16","2 juin 2024 00:00",""
+"Forfait","20.00","EUR","0.945805","18.92","Dépense","Forfait Téléphone ☎️","Emilian","0.00","18.92","0.00","-18.92","3 mai 2024 00:00",""
+"Burger veille soutenance","15.90","CHF","1","15.90","Dépense","Restaurants & Bars","Emilian","0.00","15.90","0.00","-15.90","9 septembre 2024 00:00",""
+"Festival","124.00","CHF","1","124.00","Dépense","Week-end 🥳","Emilian","0.00","124.00","0.00","-124.00","9 septembre 2024 00:00",""
+"Clé USB","12.95","CHF","1","12.95","Dépense","Dépense unique ⚡","Emilian","0.00","12.95","0.00","-12.95","9 septembre 2024 00:00",""
+"Migros casse dale","5.75","CHF","1","5.75","Dépense","Restaurants & Bars","Emilian","0.00","5.75","-5.75","0.00","9 septembre 2024 00:00",""
+"Contrôle des habitants","70.00","CHF","1","70.00","Dépense","Administratif 🛂","Emilian","0.00","70.00","0.00","-70.00","9 septembre 2024 00:00",""
+"Cff","260.00","CHF","1","260.00","Dépense","Transport","Emilian","0.00","260.00","0.00","-260.00","9 septembre 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","90.00","90.00","9 septembre 2024 00:00",""
+"Salaire","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","2 septembre 2024 00:00",""
+"Coop Berne","15.35","CHF","1","15.35","Dépense","Restaurants & Bars","Emilian","0.00","15.35","-7.67","-7.68","9 septembre 2024 00:00",""
+"MacDo","9.90","CHF","1","9.90","Dépense","Plaisir 🍫","Emilian","0.00","9.90","-4.95","-4.95","9 septembre 2024 00:00",""
+"Felfel","7.50","CHF","1","7.50","Dépense","Restaurants & Bars","Emilian","0.00","7.50","0.00","-7.50","9 septembre 2024 00:00",""
+"Courses","43.30","EUR","0.934668268470944","40.47","Dépense","Courses","Caps","40.47","0.00","-20.23","-20.24","3 septembre 2024 00:00",""
+"Apéro de départ","45.00","EUR","0.934668268470944","42.06","Dépense","Taff   🥂","Caps","42.06","0.00","-42.06","0.00","3 septembre 2024 00:00",""
+"Courses congelées coop","28.50","CHF","1","28.50","Dépense","Courses","Caps","28.50","0.00","-14.25","-14.25","26 août 2024 00:00",""
+"Courses","83.72","EUR","0.956671","80.09","Dépense","Courses","Caps","80.09","0.00","-40.04","-40.05","25 août 2024 00:00",""
+"Chez Lin","40.00","CHF","1","40.00","Dépense","Restaurants & Bars","Emilian","0.00","40.00","-20.00","-20.00","24 août 2024 00:00",""
+"Préservatifs","11.00","EUR","0.956671","10.52","Dépense","Hygiène et cosmétique 🧴","Caps","10.52","0.00","-5.26","-5.26","24 août 2024 00:00",""
+"Salaire","-2032.00","CHF","1","-2032.00","Rentrée d'argent","Salaire 💵","Caps","-2032.00","0.00","2032.00","0.00","24 août 2024 00:00",""
+"Probiotiques etc.","70.00","EUR","0.956671","66.97","Dépense","Soin de santé","Caps","66.97","0.00","-66.97","0.00","24 août 2024 00:00",""
+"Gummies pour dormir","12.00","EUR","0.956671","11.48","Dépense","Soin de santé","Caps","11.48","0.00","-5.74","-5.74","24 août 2024 00:00",""
+"Courses","26.00","EUR","0.956671","24.87","Dépense","Courses","Caps","24.87","0.00","-12.43","-12.44","24 août 2024 00:00",""
+"Frappé MacDo","5.30","CHF","1","5.30","Dépense","Plaisir 🍫","Emilian","0.00","5.30","-2.65","-2.65","24 août 2024 00:00",""
+"Verre","5.50","CHF","1","5.50","Dépense","Restaurants & Bars","Emilian","0.00","5.50","-2.75","-2.75","23 août 2024 00:00",""
+"Chez Lin","40.00","CHF","1","40.00","Dépense","Restaurants & Bars","Emilian","0.00","40.00","-20.00","-20.00","23 août 2024 00:00",""
+"Transport","7.00","EUR","0.961373","6.73","Dépense","Vacances 🌴","Caps","6.73","0.00","-3.36","-3.37","14 août 2024 00:00",""
+"Panino","16.80","EUR","0.961373","16.15","Dépense","Vacances 🌴","Caps","16.15","0.00","-8.07","-8.08","14 août 2024 00:00",""
+"Place concert Versoix","15.00","CHF","1","15.00","Dépense","Loisirs 🏩","Caps","15.00","0.00","-15.00","0.00","20 août 2024 00:00",""
+"Mini courses quiche","6.30","CHF","1","6.30","Dépense","Courses","Caps","6.30","0.00","-3.15","-3.15","20 août 2024 00:00",""
+"Tête brosse à dents","1.00","EUR","0.961373","0.96","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","0.96","0.00","-0.96","19 août 2024 00:00",""
+"Courses","61.94","EUR","0.961373","59.55","Dépense","Courses","Emilian","0.00","59.55","-29.77","-29.78","19 août 2024 00:00",""
+"Chaussons au pomme Macdo","2.70","CHF","1","2.70","Dépense","Restaurants & Bars","Emilian","0.00","2.70","-1.35","-1.35","17 août 2024 00:00",""
+"Courses","8.44","EUR","0.951916","8.03","Dépense","Vacances 🌴","Caps","8.03","0.00","-4.01","-4.02","15 août 2024 00:00",""
+"Haut H&M","16.00","EUR","0.951916","15.23","Dépense","Vacances 🌴","Caps","15.23","0.00","-15.23","0.00","17 août 2024 00:00",""
+"Transport","4.40","EUR","0.951916","4.19","Dépense","Vacances 🌴","Caps","4.19","0.00","-2.09","-2.10","17 août 2024 00:00",""
+"Transport","4.40","EUR","0.951916","4.19","Dépense","Vacances 🌴","Caps","4.19","0.00","-2.09","-2.10","17 août 2024 00:00",""
+"Frozen coffe smoothie","9.00","EUR","0.951916","8.57","Dépense","Vacances 🌴","Caps","8.57","0.00","-4.28","-4.29","16 août 2024 00:00",""
+"Locker gare Lucerne","12.00","CHF","1","12.00","Dépense","Vacances 🌴","Caps","12.00","0.00","-6.00","-6.00","16 août 2024 00:00",""
+"MacDo Lugano","26.10","CHF","1","26.10","Dépense","Vacances 🌴","Emilian","0.00","26.10","-13.05","-13.05","14 août 2024 00:00",""
+"Morcote Glaces Swib","9.00","CHF","1","9.00","Dépense","Vacances 🌴","Emilian","0.00","9.00","-4.50","-4.50","15 août 2024 00:00",""
+"Affogato","8.50","CHF","1","8.50","Dépense","Vacances 🌴","Emilian","0.00","8.50","-4.25","-4.25","16 août 2024 00:00",""
+"Supérette gare Monza","6.63","EUR","0.96471","6.40","Dépense","Vacances 🌴","Emilian","0.00","6.40","-3.20","-3.20","13 août 2024 00:00",""
+"Boulangerie Varenna","18.00","EUR","0.96471","17.36","Dépense","Vacances 🌴","Emilian","0.00","17.36","-8.68","-8.68","13 août 2024 00:00",""
+"Resto Duomo","30.80","EUR","0.96471","29.71","Dépense","Vacances 🌴","Emilian","0.00","29.71","-14.85","-14.86","12 août 2024 00:00",""
+"Transport","5.20","EUR","0.96471","5.02","Dépense","Vacances 🌴","Emilian","0.00","5.02","-2.51","-2.51","17 août 2024 00:00",""
+"Boissons fraiches","8.00","EUR","0.96471","7.72","Dépense","Vacances 🌴","Emilian","0.00","7.72","-3.86","-3.86","17 août 2024 00:00",""
+"Transport","4.40","EUR","0.96471","4.24","Dépense","Vacances 🌴","Emilian","0.00","4.24","-2.12","-2.12","17 août 2024 00:00",""
+"Verres Navigli","18.00","EUR","0.96471","17.36","Dépense","Vacances 🌴","Emilian","0.00","17.36","-8.68","-8.68","17 août 2024 00:00",""
+"Transport","7.00","EUR","0.96471","6.75","Dépense","Vacances 🌴","Emilian","0.00","6.75","-3.37","-3.38","17 août 2024 00:00",""
+"Transport Lugano AR","7.20","CHF","1","7.20","Dépense","Vacances 🌴","Emilian","0.00","7.20","0.00","-7.20","17 août 2024 00:00",""
+"Snack bar","5.50","CHF","1","5.50","Dépense","Vacances 🌴","Emilian","0.00","5.50","-2.75","-2.75","17 août 2024 00:00",""
+"Chemise H&M Entretien","30.25","CHF","1","30.25","Dépense","Shopping","Emilian","0.00","30.25","0.00","-30.25","17 août 2024 00:00",""
+"Fine pizza","35.50","EUR","0.96471","34.25","Dépense","Vacances 🌴","Emilian","0.00","34.25","-17.12","-17.13","17 août 2024 00:00",""
+"Dernier resto milan","25.80","EUR","0.96471","24.89","Dépense","Vacances 🌴","Emilian","0.00","24.89","-12.44","-12.45","17 août 2024 00:00",""
+"Lego","10.00","EUR","0.96471","9.65","Dépense","Vacances 🌴","Emilian","0.00","9.65","-4.82","-4.83","17 août 2024 00:00",""
+"Transport","10.10","EUR","0.96471","9.74","Dépense","Vacances 🌴","Emilian","0.00","9.74","0.00","-9.74","17 août 2024 00:00",""
+"Transport","5.20","EUR","0.96471","5.02","Dépense","Vacances 🌴","Emilian","0.00","5.02","-2.51","-2.51","17 août 2024 00:00",""
+"Métro milan","2.20","EUR","0.96471","2.12","Dépense","Vacances 🌴","Emilian","0.00","2.12","0.00","-2.12","17 août 2024 00:00",""
+"Denner","32.80","CHF","1","32.80","Dépense","Courses","Emilian","0.00","32.80","-16.40","-16.40","17 août 2024 00:00",""
+"Resto Monza","33.50","EUR","0.951916","31.89","Dépense","Vacances 🌴","Caps","31.89","0.00","-15.94","-15.95","15 août 2024 00:00",""
+"Fondation Prada","13.00","EUR","0.953311","12.39","Dépense","Vacances 🌴","Caps","12.39","0.00","-12.39","0.00","13 août 2024 00:00",""
+"Aperitivo","26.00","EUR","0.953311","24.79","Dépense","Vacances 🌴","Caps","24.79","0.00","-12.39","-12.40","13 août 2024 00:00",""
+"Panino","16.80","EUR","0.948351","15.93","Dépense","Vacances 🌴","Caps","15.93","0.00","-7.96","-7.97","13 août 2024 00:00",""
+"Transport","14.20","EUR","0.948351","13.47","Dépense","Vacances 🌴","Emilian","0.00","13.47","-6.73","-6.74","12 août 2024 00:00",""
+"Bellagio Come","10.00","EUR","0.948351","9.48","Dépense","Vacances 🌴","Caps","9.48","0.00","-4.74","-4.74","12 août 2024 00:00",""
+"Bateau","18.40","EUR","0.948351","17.45","Dépense","Vacances 🌴","Emilian","0.00","17.45","-8.72","-8.73","12 août 2024 00:00",""
+"Glaces","6.50","EUR","0.948351","6.16","Dépense","Vacances 🌴","Emilian","0.00","6.16","-3.08","-3.08","12 août 2024 00:00",""
+"Boisson","6.00","EUR","0.948351","5.69","Dépense","Vacances 🌴","Emilian","0.00","5.69","-2.84","-2.85","11 août 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","90.00","90.00","1 juin 2024 00:00",""
+"Eventail","5.00","EUR","0.948351","4.74","Dépense","Vacances 🌴","Caps","4.74","0.00","-4.74","0.00","11 août 2024 00:00",""
+"Transport","18.40","EUR","0.948351","17.45","Dépense","Vacances 🌴","Emilian","0.00","17.45","-8.72","-8.73","11 août 2024 00:00",""
+"Resto Milano","62.00","EUR","0.948351","58.80","Dépense","Vacances 🌴","Emilian","0.00","58.80","-29.40","-29.40","11 août 2024 00:00",""
+"Métro Milan","4.40","EUR","0.948351","4.17","Dépense","Vacances 🌴","Emilian","0.00","4.17","-2.08","-2.09","11 août 2024 00:00",""
+"Iced latte","8.20","EUR","0.948351","7.78","Dépense","Vacances 🌴","Emilian","0.00","7.78","-3.89","-3.89","11 août 2024 00:00",""
+"Train","7.00","EUR","0.948351","6.64","Dépense","Vacances 🌴","Emilian","0.00","6.64","-3.32","-3.32","11 août 2024 00:00",""
+"Train","7.20","CHF","1","7.20","Dépense","Vacances 🌴","Emilian","0.00","7.20","-3.60","-3.60","10 août 2024 00:00",""
+"Mc Do","34.80","CHF","1","34.80","Dépense","Restaurants & Bars","Emilian","0.00","34.80","-17.40","-17.40","11 août 2024 00:00",""
+"DM","10.50","EUR","0.948351","9.96","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","9.96","-9.96","0.00","11 août 2024 00:00",""
+"Duomo","40.00","EUR","0.948351","37.93","Dépense","Vacances 🌴","Emilian","0.00","37.93","-18.96","-18.97","11 août 2024 00:00",""
+"Verres Côme","10.00","EUR","0.948351","9.48","Dépense","Vacances 🌴","Emilian","0.00","9.48","-4.74","-4.74","10 août 2024 00:00",""
+"Tiramisu resto","16.00","EUR","0.948351","15.17","Dépense","Vacances 🌴","Emilian","0.00","15.17","-7.58","-7.59","10 août 2024 00:00",""
+"Courses Côme","24.96","EUR","0.96471","24.08","Dépense","Vacances 🌴","Emilian","0.00","24.08","-12.04","-12.04","10 août 2024 00:00",""
+"Pain au raisin","3.00","CHF","1","3.00","Dépense","Courses","Caps","3.00","0.00","-3.00","0.00","10 août 2024 00:00",""
+"Milan seregno jour 1","5.20","EUR","0.948351","4.93","Dépense","Vacances 🌴","Caps","4.93","0.00","-2.46","-2.47","10 août 2024 00:00",""
+"Métro matin 1","4.40","EUR","0.948351","4.17","Dépense","Vacances 🌴","Emilian","0.00","4.17","-2.08","-2.09","10 août 2024 00:00",""
+"Resto midi 1","23.00","EUR","0.948351","21.81","Dépense","Vacances 🌴","Emilian","0.00","21.81","-10.90","-10.91","10 août 2024 00:00",""
+"Tarte crème","11.00","CHF","1","11.00","Dépense","Plaisir 🍫","Emilian","0.00","11.00","-5.50","-5.50","8 août 2024 00:00",""
+"Coiffeur","20.00","CHF","1","20.00","Dépense","Coiffeur 💈","Emilian","0.00","20.00","0.00","-20.00","8 août 2024 00:00",""
+"Foccacias avec Romane","28.50","CHF","1","28.50","Dépense","Restaurants & Bars","Caps","28.50","0.00","-28.50","0.00","27 juillet 2024 00:00",""
+"Cff","260.00","CHF","1","260.00","Dépense","Transport","Caps","260.00","0.00","-260.00","0.00","2 août 2024 00:00",""
+"Cff","260.00","CHF","1","260.00","Dépense","Transport","Emilian","0.00","260.00","0.00","-260.00","2 août 2024 00:00",""
+"Courses","114.00","EUR","0.961072","109.56","Dépense","Courses","Emilian","0.00","109.56","-54.78","-54.78","29 juillet 2024 00:00",""
+"Courses","26.00","EUR","0.948351","24.66","Dépense","Courses","Emilian","0.00","24.66","-12.33","-12.33","2 août 2024 00:00",""
+"Planche apéro","31.00","CHF","1","31.00","Dépense","Restaurants & Bars","Emilian","0.00","31.00","-15.50","-15.50","2 août 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.961072","1.92","Dépense","Frais bancaires 🏦","Emilian","0.00","1.92","0.00","-1.92","2 août 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","90.00","90.00","2 août 2024 00:00",""
+"Salaire","-2023.00","CHF","1","-2023.00","Rentrée d'argent","Salaire 💵","Caps","-2023.00","0.00","2023.00","0.00","1 août 2024 00:00",""
+"Salaire","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","2 août 2024 00:00",""
+"Conversion change","5.00","CHF","1","5.00","Dépense","Frais bancaires 🏦","Emilian","0.00","5.00","-2.50","-2.50","2 août 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","1 août 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Emilian","0.00","775.00","0.00","-775.00","1 août 2024 00:00",""
+"Glaces","7.00","CHF","1","7.00","Dépense","Plaisir 🍫","Caps","7.00","0.00","-3.50","-3.50","2 août 2024 00:00",""
+"Courses","92.92","EUR","0.961846","89.37","Dépense","Courses","Emilian","0.00","89.37","-44.68","-44.69","28 juillet 2024 00:00",""
+"LinkedIn Premium","16.70","EUR","0.961846","16.06","Dépense","Taff 🥂","Emilian","0.00","16.06","0.00","-16.06","28 juin 2024 00:00",""
+"Kebab Lyon","10.50","EUR","0.961846","10.10","Dépense","Restaurants & Bars","Emilian","0.00","10.10","0.00","-10.10","27 juillet 2024 00:00",""
+"Caramels","5.61","EUR","0.961846","5.40","Dépense","Taff 🥂","Emilian","0.00","5.40","0.00","-5.40","27 juillet 2024 00:00",""
+"Pantalon Staff","50.00","EUR","0.961846","48.09","Dépense","Shopping","Emilian","0.00","48.09","0.00","-48.09","27 juillet 2024 00:00",""
+"Migrolino Montreux","7.80","CHF","1","7.80","Dépense","Courses","Emilian","0.00","7.80","-3.90","-3.90","27 juillet 2024 00:00",""
+"Coca","1.50","CHF","1","1.50","Dépense","Restaurants & Bars","Emilian","0.00","1.50","0.00","-1.50","17 juillet 2024 00:00",""
+"Mitraillette swibeco","12.00","CHF","1","12.00","Dépense","Restaurants & Bars","Emilian","0.00","12.00","0.00","-12.00","17 juillet 2024 00:00",""
+"Courses coop","7.40","CHF","1","7.40","Dépense","Courses","Emilian","0.00","7.40","-3.70","-3.70","16 juillet 2024 00:00",""
+"Aller Genève Milan","60.00","EUR","0.979223","58.75","Dépense","Vacances 🌴","Emilian","0.00","58.75","-29.37","-29.38","10 août 2024 00:00",""
+"Retour Milan Lucerne","48.00","EUR","0.979223","47.00","Dépense","Vacances 🌴","Emilian","0.00","47.00","-23.50","-23.50","16 août 2024 00:00",""
+"Vacances en Italie","365.00","EUR","0.979223","357.42","Dépense","Vacances 🌴","Caps","357.42","0.00","-178.71","-178.71","10 août 2024 00:00",""
+"Burger Dinner","55.80","CHF","1","55.80","Dépense","Restaurants & Bars","Emilian","0.00","55.80","-27.90","-27.90","14 juillet 2024 00:00",""
+"Anniv Mogs","10.00","EUR","0.979223","9.79","Dépense","Cadeau 🎁","Caps","9.79","0.00","-9.79","0.00","29 juin 2024 00:00",""
+"Anniv Mogs","10.00","EUR","0.979223","9.79","Dépense","Cadeau 🎁","Emilian","0.00","9.79","0.00","-9.79","21 juin 2024 00:00",""
+"Samedi Lausanne Swibeco","45.00","CHF","1","45.00","Dépense","Restaurants & Bars","Emilian","0.00","45.00","-22.50","-22.50","13 juillet 2024 00:00",""
+"Glace Swibeco","12.00","CHF","1","12.00","Dépense","Restaurants & Bars","Emilian","0.00","12.00","-6.00","-6.00","13 juillet 2024 00:00",""
+"Cine","38.00","CHF","1","38.00","Dépense","Loisirs 🏩","Caps","38.00","0.00","-19.00","-19.00","13 juillet 2024 00:00",""
+"AR Annecy","15.00","CHF","1","15.00","Dépense","Transport","Emilian","0.00","15.00","0.00","-15.00","28 juin 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","90.00","90.00","12 juillet 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","0.00","180.00","18 avril 2024 00:00",""
+"Bière demi-finale","8.00","CHF","1","8.00","Dépense","Restaurants & Bars","Emilian","0.00","8.00","0.00","-8.00","12 juillet 2024 00:00",""
+"Claires","15.00","CHF","1","15.00","Dépense","Shopping","Caps","15.00","0.00","-15.00","0.00","21 juin 2024 00:00",""
+"Voyage Annecy A/R Caps","30.80","CHF","1","30.80","Dépense","Transport","Caps","30.80","0.00","-30.80","0.00","23 juin 2024 00:00",""
+"Salaire stage Caps","-2040.00","CHF","1","-2040.00","Rentrée d'argent","Salaire 💵","Caps","-2040.00","0.00","2040.00","0.00","24 juin 2024 00:00",""
+"Paris Lausanne Caps","49.00","EUR","0.97479","47.76","Dépense","Transport","Caps","47.76","0.00","-47.76","0.00","11 juillet 2024 00:00",""
+"Genève Paris Caps","59.00","EUR","0.97479","57.51","Dépense","Transport","Caps","57.51","0.00","-57.51","0.00","4 juillet 2024 00:00",""
+"Mc Do","15.50","CHF","1","15.50","Dépense","Restaurants & Bars","Caps","15.50","0.00","-15.50","0.00","5 juillet 2024 00:00",""
+"Thaï","15.50","EUR","0.97479","15.11","Dépense","Restaurants & Bars","Caps","15.11","0.00","-15.11","0.00","6 juillet 2024 00:00",""
+"Resto","20.40","EUR","0.97479","19.89","Dépense","Restaurants & Bars","Caps","19.89","0.00","-19.89","0.00","7 juillet 2024 00:00",""
+"Libanais","9.40","EUR","0.97479","9.16","Dépense","Restaurants & Bars","Caps","9.16","0.00","-9.16","0.00","7 juillet 2024 00:00",""
+"Converse","71.00","EUR","0.97479","69.21","Dépense","Shopping","Caps","69.21","0.00","-69.21","0.00","8 juillet 2024 00:00",""
+"Mercerie broderie","11.80","EUR","0.97479","11.50","Dépense","Shopping","Caps","11.50","0.00","-11.50","0.00","8 juillet 2024 00:00",""
+"Sushi Paris","16.90","EUR","0.97479","16.47","Dépense","Restaurants & Bars","Caps","16.47","0.00","-16.47","0.00","8 juillet 2024 00:00",""
+"Pizza fan zone","10.00","CHF","1","10.00","Dépense","Restaurants & Bars","Emilian","0.00","10.00","0.00","-10.00","6 juillet 2024 00:00",""
+"Bière fan zone Geneve","18.00","CHF","1","18.00","Dépense","Restaurants & Bars","Emilian","0.00","18.00","0.00","-18.00","6 juillet 2024 00:00",""
+"Salaire stage","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","13 juin 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","4 juillet 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.973106","1.95","Dépense","Frais bancaires 🏦","Emilian","0.00","1.95","0.00","-1.95","5 juin 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.973106","1.95","Dépense","Frais bancaires 🏦","Emilian","0.00","1.95","0.00","-1.95","4 juillet 2024 00:00",""
+"Déboucheur","10.00","EUR","0.973106","9.73","Dépense","Produits d'entretien 🧹","Emilian","0.00","9.73","-4.86","-4.87","4 juillet 2024 00:00",""
+"Feuille lessive","4.00","EUR","0.973106","3.89","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","3.89","-1.94","-1.95","4 juillet 2024 00:00",""
+"Courses","112.00","EUR","0.973106","108.99","Dépense","Courses","Caps","108.99","0.00","-54.49","-54.50","4 juillet 2024 00:00",""
+"Frais conversion","5.00","CHF","1","5.00","Dépense","Frais bancaires 🏦","Emilian","0.00","5.00","-2.50","-2.50","2 juillet 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Emilian","0.00","775.00","0.00","-775.00","2 juillet 2024 00:00",""
+"Petit dej Coop","2.10","CHF","1","2.10","Dépense","Courses","Emilian","0.00","2.10","0.00","-2.10","28 juin 2024 00:00",""
+"Le Paradigme Bitcoin","180.00","CHF","1","180.00","Dépense","Loisirs 🏩","Emilian","0.00","180.00","0.00","-180.00","21 juin 2024 00:00",""
+"Sushi Swibeco","49.80","CHF","1","49.80","Dépense","Restaurants & Bars","Emilian","0.00","49.80","-24.90","-24.90","20 juin 2024 00:00",""
+"Burger Smood Swibeco","69.40","CHF","1","69.40","Dépense","Restaurants & Bars","Emilian","0.00","69.40","-34.70","-34.70","21 juin 2024 00:00",""
+"Flix Bretagne aller","69.50","EUR","0.966447","67.17","Dépense","Transport","Emilian","0.00","67.17","0.00","-67.17","2 juillet 2024 00:00",""
+"Flixbus retour","145.00","EUR","0.966447","140.13","Dépense","Transport","Caps","140.13","0.00","-70.06","-70.07","2 juillet 2024 00:00",""
+"Petit dej","7.00","CHF","1","7.00","Dépense","Taff 🥂","Caps","7.00","0.00","-7.00","0.00","27 juin 2024 00:00",""
+"Anniv math","17.45","CHF","1","17.45","Dépense","Cadeau 🎁","Caps","17.45","0.00","-8.72","-8.73","25 juin 2024 00:00",""
+"Restau Annecy","50.00","EUR","0.959387","47.97","Dépense","Restaurants & Bars","Caps","47.97","0.00","-23.98","-23.99","23 juin 2024 00:00",""
+"Coiffeur","20.00","CHF","1","20.00","Dépense","Coiffeur 💈","Emilian","0.00","20.00","0.00","-20.00","21 juin 2024 00:00",""
+"Produit menager","7.20","CHF","1","7.20","Dépense","Produits d'entretien 🧹","Emilian","0.00","7.20","-3.60","-3.60","21 juin 2024 00:00",""
+"Pringles","3.30","CHF","1","3.30","Dépense","Plaisir 🍫","Emilian","0.00","3.30","0.00","-3.30","21 juin 2024 00:00",""
+"Courses","48.00","EUR","0.962948","46.22","Dépense","Courses","Emilian","0.00","46.22","-23.11","-23.11","17 juin 2024 00:00",""
+"Dentifrice","7.20","EUR","0.962948","6.93","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","6.93","-3.46","-3.47","17 juin 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","0.00","180.00","24 mai 2024 00:00",""
+"Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","0.00","180.00","25 mars 2024 00:00",""
+"Salaire stage Caps","-2032.10","CHF","1","-2032.10","Rentrée d'argent","Salaire 💵","Caps","-2032.10","0.00","2032.10","0.00","25 mai 2024 00:00",""
+"Salaire stage Caps","-2022.80","CHF","1","-2022.80","Rentrée d'argent","Salaire 💵","Caps","-2022.80","0.00","2022.80","0.00","25 avril 2024 00:00",""
+"Salaire stage Caps","-2023.00","CHF","1","-2023.00","Rentrée d'argent","Salaire 💵","Caps","-2023.00","0.00","2023.00","0.00","26 mars 2024 00:00",""
+"Salaire stage","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","25 mai 2024 00:00",""
+"Salaire stage","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","25 avril 2024 00:00",""
+"Salaire mars","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","26 mars 2024 00:00",""
+"Beer Pydata","4.00","CHF","1","4.00","Dépense","Restaurants & Bars","Emilian","0.00","4.00","0.00","-4.00","15 juin 2024 00:00",""
+"Tacos Nyon","13.00","CHF","1","13.00","Dépense","Restaurants & Bars","Emilian","0.00","13.00","0.00","-13.00","15 juin 2024 00:00",""
+"To good to go","7.90","CHF","1","7.90","Dépense","Courses","Emilian","0.00","7.90","0.00","-7.90","15 juin 2024 00:00",""
+"Cocktail anniv Anna","27.00","CHF","1","27.00","Dépense","Restaurants & Bars","Emilian","0.00","27.00","-27.00","0.00","10 juin 2024 00:00",""
+"Soirée Lausanne anniv Anna","16.00","CHF","1","16.00","Dépense","Restaurants & Bars","Emilian","0.00","16.00","-8.00","-8.00","10 juin 2024 00:00",""
+"Courses Leclerc","67.00","EUR","0.978634","65.57","Dépense","Courses","Emilian","0.00","65.57","-32.78","-32.79","10 juin 2024 00:00",""
+"Dentifrice et brosse","3.80","EUR","0.978634","3.72","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","3.72","-1.86","-1.86","10 juin 2024 00:00",""
+"Exki Orly","9.80","EUR","0.978634","9.59","Dépense","Restaurants & Bars","Caps","9.59","0.00","-9.59","0.00","28 mai 2024 00:00",""
+"Exki Orly","15.85","EUR","0.978634","15.51","Dépense","Restaurants & Bars","Caps","15.51","0.00","-15.51","0.00","28 mai 2024 00:00",""
+"Pharmacie Orly","18.40","EUR","0.978634","18.01","Dépense","Soin de santé","Caps","18.01","0.00","-18.01","0.00","28 mai 2024 00:00",""
+"Cookie mie caline","4.30","EUR","0.978634","4.21","Dépense","Plaisir 🍫","Caps","4.21","0.00","-4.21","0.00","27 mai 2024 00:00",""
+"Yves Rocher","20.35","EUR","0.978634","19.92","Dépense","Hygiène et cosmétique 🧴","Caps","19.92","0.00","-19.92","0.00","27 mai 2024 00:00",""
+"Logement Lyon","37.00","EUR","0.978634","36.21","Dépense","Logement","Caps","36.21","0.00","-36.21","0.00","6 avril 2024 00:00",""
+"Lyon Genève","25.10","EUR","0.978634","24.56","Dépense","Transport","Caps","24.56","0.00","-24.56","0.00","1 avril 2024 00:00",""
+"Geneve Lyon","33.40","EUR","0.978634","32.69","Dépense","Transport","Caps","32.69","0.00","-32.69","0.00","1 avril 2024 00:00",""
+"H&H","37.90","CHF","1","37.90","Dépense","Shopping","Caps","37.90","0.00","-37.90","0.00","25 mai 2024 00:00",""
+"Opodo","99.90","CHF","1","99.90","Dépense","Transport","Caps","99.90","0.00","-99.90","0.00","27 mai 2024 00:00",""
+"Chewing-gum","2.95","CHF","1","2.95","Dépense","Courses","Caps","2.95","0.00","-2.95","0.00","6 juin 2024 00:00",""
+"Myrtille","2.40","CHF","1","2.40","Dépense","Courses","Caps","2.40","0.00","-2.40","0.00","7 juin 2024 00:00",""
+"H&M","22.60","CHF","1","22.60","Dépense","Shopping","Caps","22.60","0.00","-22.60","0.00","8 juin 2024 00:00",""
+"Bracelet Ana","16.90","CHF","1","16.90","Dépense","Cadeau 🎁","Caps","16.90","0.00","-16.90","0.00","8 juin 2024 00:00",""
+"Mc Fleury","4.60","CHF","1","4.60","Dépense","Plaisir 🍫","Caps","4.60","0.00","-2.30","-2.30","9 juin 2024 00:00",""
+"Glaces Nuii","5.70","CHF","1","5.70","Dépense","Courses","Caps","5.70","0.00","-2.85","-2.85","31 mai 2024 00:00",""
+"Gifi support vélo brosse à dent","10.60","CHF","1","10.60","Dépense","Dépense unique ⚡","Emilian","0.00","10.60","-5.30","-5.30","1 juin 2024 00:00",""
+"Sacs poubelles","19.50","CHF","1","19.50","Dépense","Ordures 🗑️","Emilian","0.00","19.50","-9.75","-9.75","29 mai 2024 00:00",""
+"Too good to go","7.90","CHF","1","7.90","Dépense","Courses","Emilian","0.00","7.90","-3.95","-3.95","26 mai 2024 00:00",""
+"Too good to go","7.90","CHF","1","7.90","Dépense","Courses","Emilian","0.00","7.90","-3.95","-3.95","2 juin 2024 00:00",""
+"Aldi","14.70","EUR","0.995142","14.63","Dépense","Courses","Emilian","0.00","14.63","-7.31","-7.32","28 mai 2024 00:00",""
+"Cff","260.00","CHF","1","260.00","Dépense","Transport","Emilian","0.00","260.00","0.00","-260.00","1 juin 2024 00:00",""
+"Cff","260.00","CHF","1","260.00","Dépense","Transport","Caps","260.00","0.00","-260.00","0.00","1 juin 2024 00:00",""
+"Courses 2 juin","77.83","EUR","0.987396","76.85","Dépense","Courses","Caps","76.85","0.00","-38.42","-38.43","2 juin 2024 00:00",""
+"Five Guys","41.40","CHF","1","41.40","Dépense","Restaurants & Bars","Emilian","0.00","41.40","-20.70","-20.70","16 mai 2024 00:00",""
+"Afterwork Teoxane","22.00","CHF","1","22.00","Dépense","Restaurants & Bars","Emilian","0.00","22.00","0.00","-22.00","31 mai 2024 00:00",""
+"Resto Genève","52.00","CHF","1","52.00","Dépense","Restaurants & Bars","Emilian","0.00","52.00","-26.00","-26.00","23 mai 2024 00:00",""
+"Gaufres Morges","13.00","CHF","1","13.00","Dépense","Plaisir 🍫","Emilian","0.00","13.00","-6.50","-6.50","2 juin 2024 00:00",""
+"Frais de conversion","2.75","CHF","1","2.75","Dépense","Frais bancaires 🏦","Caps","2.75","0.00","-2.75","0.00","2 juin 2024 00:00",""
+"Frais de conversion","2.75","CHF","1","2.75","Dépense","Frais bancaires 🏦","Emilian","0.00","2.75","0.00","-2.75","2 juin 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","2 juin 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Emilian","0.00","775.00","0.00","-775.00","2 juin 2024 00:00",""
+"Courses Leclerc","72.50","EUR","0.991914","71.91","Dépense","Courses","Emilian","0.00","71.91","-35.95","-35.96","22 mai 2024 00:00",""
+"Argile et sham solide spray","10.30","EUR","0.991914","10.22","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","10.22","-5.11","-5.11","22 mai 2024 00:00",""
+"Anniv boulot","10.07","EUR","0.991914","9.99","Dépense","Taff 🥂","Emilian","0.00","9.99","0.00","-9.99","22 mai 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.991914","1.98","Dépense","Frais bancaires 🏦","Emilian","0.00","1.98","0.00","-1.98","1 mai 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.991914","1.98","Dépense","Frais bancaires 🏦","Emilian","0.00","1.98","0.00","-1.98","1 avril 2024 00:00",""
+"Frais de carte CA","2.00","EUR","0.991914","1.98","Dépense","Frais bancaires 🏦","Emilian","0.00","1.98","0.00","-1.98","1 mars 2024 00:00",""
+"Courses Leclerc","93.13","EUR","0.991914","92.38","Dépense","Courses","Emilian","0.00","92.38","-46.19","-46.19","22 mai 2024 00:00",""
+"Drive Carrefour","64.84","EUR","0.991914","64.32","Dépense","Courses","Emilian","0.00","64.32","-32.16","-32.16","22 mai 2024 00:00",""
+"Courses Denner Pentecôte","32.85","CHF","1","32.85","Dépense","Courses","Emilian","0.00","32.85","-16.42","-16.43","22 mai 2024 00:00",""
+"Glace Nyon","8.00","CHF","1","8.00","Dépense","Plaisir 🍫","Emilian","0.00","8.00","-4.00","-4.00","22 mai 2024 00:00",""
+"Flixbus Bretagne Mai","130.00","EUR","0.980776","127.50","Dépense","Transport","Emilian","0.00","127.50","0.00","-127.50","20 mars 2024 00:00",""
+"Verre Nyon copains","55.40","CHF","1","55.40","Dépense","Restaurants & Bars","Caps","55.40","0.00","-27.70","-27.70","22 mai 2024 00:00",""
+"Caraque copains","13.50","CHF","1","13.50","Dépense","Plaisir 🍫","Caps","13.50","0.00","-6.75","-6.75","22 mai 2024 00:00",""
+"Bouteille avec les copains","9.00","CHF","1","9.00","Dépense","Restaurants & Bars","Caps","9.00","0.00","-4.50","-4.50","22 mai 2024 00:00",""
+"To good to go","7.90","CHF","1","7.90","Dépense","Courses","Caps","7.90","0.00","-3.95","-3.95","22 mai 2024 00:00",""
+"Glace Nyon","8.00","CHF","1","8.00","Dépense","Plaisir 🍫","Emilian","0.00","8.00","-4.00","-4.00","22 mai 2024 00:00",""
+"Resto avec les copains","126.00","EUR","0.991914","124.98","Dépense","Restaurants & Bars","Caps","124.98","0.00","-62.49","-62.49","22 mai 2024 00:00",""
+"Casque Audio","90.00","EUR","0.980776","88.27","Dépense","Dépense unique ⚡","Emilian","0.00","88.27","0.00","-88.27","11 mai 2024 00:00",""
+"Caramels boulot","5.60","EUR","0.980776","5.49","Dépense","Taff 🥂","Emilian","0.00","5.49","0.00","-5.49","11 mai 2024 00:00",""
+"Sandwich retour flixbus","5.00","EUR","0.980776","4.90","Dépense","Courses","Emilian","0.00","4.90","0.00","-4.90","11 mai 2024 00:00",""
+"Bar tournée","24.50","EUR","0.986993","24.18","Dépense","Restaurants & Bars","Emilian","0.00","24.18","0.00","-24.18","4 mai 2024 00:00",""
+"Loyer avril","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","1 avril 2024 00:00",""
+"Loyer avril","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Emilian","0.00","775.00","0.00","-775.00","1 avril 2024 00:00",""
+"Subway Lyon","8.50","EUR","0.986993","8.39","Dépense","Restaurants & Bars","Emilian","0.00","8.39","0.00","-8.39","5 mai 2024 00:00",""
+"Loyer mai","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","5 mai 2024 00:00",""
+"Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Emilian","0.00","775.00","0.00","-775.00","5 mai 2024 00:00",""
+"Chocolat Cailler","20.35","CHF","1","20.35","Dépense","Plaisir 🍫","Caps","20.35","0.00","-10.17","-10.18","21 avril 2024 00:00",""
+"Abo CFF","260.00","CHF","1","260.00","Dépense","Transport","Emilian","0.00","260.00","0.00","-260.00","1 mai 2024 00:00",""
+"Abo CFF","260.00","CHF","1","260.00","Dépense","Transport","Caps","260.00","0.00","-260.00","0.00","1 mai 2024 00:00",""
+"Carafe anniv Valérie","59.00","CHF","1","59.00","Dépense","Cadeau 🎁","Emilian","0.00","59.00","-20.00","-39.00","20 avril 2024 00:00",""
+"Courses Coop Lausanne","21.10","CHF","1","21.10","Dépense","Courses","Caps","21.10","0.00","-10.55","-10.55","20 avril 2024 00:00",""
+"Burritos meetup","15.00","CHF","1","15.00","Dépense","Restaurants & Bars","Emilian","0.00","15.00","0.00","-15.00","18 avril 2024 00:00",""
+"Coiffeur","20.00","CHF","1","20.00","Dépense","Coiffeur 💈","Emilian","0.00","20.00","0.00","-20.00","17 avril 2024 00:00",""
+"Activia","1.55","EUR","0.981362","1.52","Dépense","Courses","Caps","1.52","0.00","-0.76","-0.76","15 avril 2024 00:00",""
+"Coton tiges","0.99","EUR","0.981362","0.97","Dépense","Hygiène et cosmétique 🧴","Caps","0.97","0.00","-0.48","-0.49","15 avril 2024 00:00",""
+"Courses","116.09","EUR","0.981362","113.93","Dépense","Courses","Caps","113.93","0.00","-56.96","-56.97","14 avril 2024 00:00",""
+"Sushi","33.30","CHF","1","33.30","Dépense","Restaurants & Bars","Emilian","0.00","33.30","-16.65","-16.65","14 avril 2024 00:00",""
+"Raclette Cully jazz","12.00","CHF","1","12.00","Dépense","Restaurants & Bars","Caps","12.00","0.00","-6.00","-6.00","14 avril 2024 00:00",""
+"Gynofit","22.60","CHF","1","22.60","Dépense","Soin de santé","Caps","22.60","0.00","-22.60","0.00","13 avril 2024 00:00",""
+"Gel douche","5.00","EUR","0.98658","4.93","Dépense","Hygiène et cosmétique 🧴","Caps","4.93","0.00","-2.46","-2.47","10 avril 2024 00:00",""
+"Courses","125.00","EUR","0.98658","123.32","Dépense","Courses","Caps","123.32","0.00","-61.66","-61.66","10 avril 2024 00:00",""
+"Évènement Watch Geneva","40.00","CHF","1","40.00","Dépense","Loisirs 🏩","Emilian","0.00","40.00","0.00","-40.00","8 avril 2024 00:00",""
+"Bière meetup","4.00","CHF","1","4.00","Dépense","Restaurants & Bars","Emilian","0.00","4.00","0.00","-4.00","5 avril 2024 00:00",""
+"Too good to go","5.90","CHF","1","5.90","Dépense","Courses","Emilian","0.00","5.90","-2.95","-2.95","5 avril 2024 00:00",""
+"Argent avec mes parents WE 4-5 avril","100.00","CHF","1","100.00","Dépense","Liquide 💸","Caps","100.00","0.00","-100.00","0.00","5 avril 2024 00:00",""
+"Courses","126.46","EUR","0.985586","124.64","Dépense","Courses","Caps","124.64","0.00","-62.32","-62.32","4 avril 2024 00:00",""
+"Dîner too good to go","5.90","CHF","1","5.90","Dépense","Courses","Emilian","0.00","5.90","0.00","-5.90","3 avril 2024 00:00",""
+"Courses","6.25","CHF","1","6.25","Dépense","Courses","Emilian","0.00","6.25","-3.12","-3.13","3 avril 2024 00:00",""
+"Frais loyer","29.00","CHF","1","29.00","Dépense","Frais bancaires 🏦","Emilian","0.00","29.00","-14.50","-14.50","3 avril 2024 00:00",""
+"Mini courses","7.70","CHF","1","7.70","Dépense","Courses","Emilian","0.00","7.70","-3.85","-3.85","1 avril 2024 00:00",""
+"Concealer Kiko","11.50","CHF","1","11.50","Dépense","Produits de beauté 💄","Caps","11.50","0.00","-11.50","0.00","31 mars 2024 00:00",""
+"Vêtements puces Nyon","12.00","CHF","1","12.00","Dépense","Shopping","Emilian","0.00","12.00","-12.00","0.00","31 mars 2024 00:00",""
+"Casse-tête puces Nyon","25.00","CHF","1","25.00","Dépense","Plaisir 🍫","Emilian","0.00","25.00","0.00","-25.00","31 mars 2024 00:00",""
+"Street food festival","27.00","CHF","1","27.00","Dépense","Restaurants & Bars","Emilian","0.00","27.00","-13.00","-14.00","30 mars 2024 00:00",""
+"Goûter boulangerie","5.80","CHF","1","5.80","Dépense","Plaisir 🍫","Emilian","0.00","5.80","-2.90","-2.90","30 mars 2024 00:00",""
+"Sauna","32.00","CHF","1","32.00","Dépense","Loisirs 🏩","Emilian","0.00","32.00","-16.00","-16.00","30 mars 2024 00:00",""
+"Courses de Pâques","12.90","CHF","1","12.90","Dépense","Plaisir 🍫","Emilian","0.00","12.90","-6.45","-6.45","30 mars 2024 00:00",""
+"Apéro de la galère","18.90","CHF","1","18.90","Dépense","Courses","Caps","18.90","0.00","-9.45","-9.45","28 mars 2024 00:00",""
+"Fromage blanc","2.55","CHF","1","2.55","Dépense","Courses","Caps","2.55","0.00","-1.27","-1.28","27 mars 2024 00:00",""
+"Dentifrice","5.00","EUR","0.974965","4.87","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","4.87","-2.43","-2.44","27 mars 2024 00:00",""
+"Courses Annemasse","99.20","EUR","0.974965","96.72","Dépense","Courses","Emilian","0.00","96.72","-48.36","-48.36","26 mars 2024 00:00",""
+"Mouv'Nyon","16.70","CHF","1","16.70","Dépense","Sport ⚾","Caps","16.70","0.00","-16.70","0.00","1 juin 2024 00:00",""
+"Mouv'Nyon","16.70","CHF","1","16.70","Dépense","Sport ⚾","Caps","16.70","0.00","-16.70","0.00","1 mai 2024 00:00",""
+"Mouv'Nyon","16.70","CHF","1","16.70","Dépense","Sport ⚾","Caps","16.70","0.00","-16.70","0.00","1 avril 2024 00:00",""
+"Too good to go","7.90","CHF","1","7.90","Dépense","Courses","Emilian","0.00","7.90","-3.95","-3.95","25 mars 2024 00:00",""
+"Too good to go","7.90","CHF","1","7.90","Dépense","Courses","Emilian","0.00","7.90","-3.95","-3.95","24 mars 2024 00:00",""
+"Sport Mouv'Nyon","16.70","CHF","1","16.70","Dépense","Sport ⚾","Emilian","0.00","16.70","0.00","-16.70","1 juin 2024 00:00",""
+"Sport Mouv'Nyon","16.70","CHF","1","16.70","Dépense","Sport ⚾","Emilian","0.00","16.70","0.00","-16.70","1 mai 2024 00:00",""
+"Sport Mouv'Nyon","16.70","CHF","1","16.70","Dépense","Sport ⚾","Emilian","0.00","16.70","0.00","-16.70","1 avril 2024 00:00",""
+"Abo CFF","260.00","CHF","1","260.00","Dépense","Transport","Caps","260.00","0.00","-260.00","0.00","1 avril 2024 00:00",""
+"Abo CFF","260.00","CHF","1","260.00","Dépense","Transport","Emilian","0.00","260.00","0.00","-260.00","1 avril 2024 00:00",""
+"Produits gifi","13.00","CHF","1","13.00","Dépense","Hygiène et cosmétique 🧴","Emilian","0.00","13.00","-13.00","0.00","23 mars 2024 00:00",""
+"Vélo","50.00","CHF","1","50.00","Dépense","Dépense unique ⚡","Emilian","0.00","50.00","0.00","-50.00","23 mars 2024 00:00",""
+"Étendoir vaisselle","13.00","CHF","1","13.00","Dépense","Dépense unique ⚡","Emilian","0.00","13.00","-6.50","-6.50","23 mars 2024 00:00",""
+"Produits d'hygiène","8.00","EUR","0.965372","7.72","Dépense","Hygiène et cosmétique 🧴","Caps","7.72","0.00","-3.86","-3.86","18 mars 2024 00:00",""
+"Courses","85.00","EUR","0.965372","82.06","Dépense","Courses","Caps","82.06","0.00","-41.03","-41.03","18 mars 2024 00:00",""
+"Coursettes weekend","5.95","CHF","1","5.95","Dépense","Courses","Caps","5.95","0.00","-2.97","-2.98","16 mars 2024 00:00",""
+"Shampooing solide","3.15","EUR","0.965734","3.04","Dépense","Hygiène et cosmétique 🧴","Caps","3.04","0.00","-1.52","-1.52","11 mars 2024 00:00",""
+"Abo train CFF","260.00","CHF","1","260.00","Dépense","Transport","Caps","260.00","0.00","-260.00","0.00","11 mars 2024 00:00",""
+"Abo train CFF","260.00","CHF","1","260.00","Dépense","Transport","Emilian","0.00","260.00","0.00","-260.00","11 mars 2024 00:00",""
+"Loyer Mars","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","11 mars 2024 00:00",""
+"Loyer Mars","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Emilian","0.00","775.00","0.00","-775.00","11 mars 2024 00:00",""
+"Courses Leclerc","74.85","EUR","0.965734","72.29","Dépense","Courses","Caps","72.29","0.00","-36.14","-36.15","11 mars 2024 00:00",""
+"Apéro Caps","19.00","EUR","0.965734","18.35","Dépense","Taff 🥂","Caps","18.35","0.00","-18.35","0.00","11 mars 2024 00:00",""
+"To good to go fleur de pain 🍞","7.90","CHF","1","7.90","Dépense","Courses","Emilian","0.00","7.90","-3.95","-3.95","11 mars 2024 00:00",""
+"Gel aloe Vera","12.50","CHF","1","12.50","Dépense","Hygiène et cosmétique 🧴","Caps","12.50","0.00","-12.50","0.00","11 mars 2024 00:00",""
+"To good to go café Milo","5.90","CHF","1","5.90","Dépense","Courses","Emilian","0.00","5.90","-2.95","-2.95","11 mars 2024 00:00",""
+"Galettes bio","2.60","CHF","1","2.60","Dépense","Courses","Caps","2.60","0.00","-1.30","-1.30","11 mars 2024 00:00",""
+"Adaptateur international","15.50","EUR","0.965734","14.97","Dépense","Dépense unique ⚡","Emilian","0.00","14.97","-7.48","-7.49","11 mars 2024 00:00",""
+"To good to go Coop","5.90","CHF","1","5.90","Dépense","Courses","Emilian","0.00","5.90","-2.95","-2.95","11 mars 2024 00:00",""
+"Courses Annemasse","81.58","EUR","0.965734","78.78","Dépense","Courses","Caps","78.78","0.00","-39.39","-39.39","11 mars 2024 00:00",""
+"To good to go Migros","5.90","CHF","1","5.90","Dépense","Courses","Emilian","0.00","5.90","-2.95","-2.95","11 mars 2024 00:00",""
+"P'tite courses Aldi","6.90","CHF","1","6.90","Dépense","Courses","Emilian","0.00","6.90","-3.45","-3.45","11 mars 2024 00:00",""
+"Lait","1.80","CHF","1","1.80","Dépense","Courses","Emilian","0.00","1.80","-0.90","-0.90","11 mars 2024 00:00",""
+"Midi Montreux 🥙","22.00","CHF","1","22.00","Dépense","Restaurants & Bars","Emilian","0.00","22.00","-11.00","-11.00","11 mars 2024 00:00",""
+"Burger King","29.80","CHF","1","29.80","Dépense","Restaurants & Bars","Emilian","0.00","29.80","-14.90","-14.90","11 mars 2024 00:00",""
+"Courses Migros Genève","24.60","CHF","1","24.60","Dépense","Courses","Emilian","0.00","24.60","-12.30","-12.30","11 mars 2024 00:00",""
+"Courses Coop 29/02","41.70","CHF","1","41.70","Dépense","Courses","Caps","41.70","0.00","-20.85","-20.85","29 février 2024 00:00",""
+"Gifi (matelas etc.)","104.45","CHF","1","104.45","Dépense","Dépense unique ⚡","Emilian","0.00","104.45","-52.22","-52.23","11 mars 2024 00:00",""
+"Courses Denner 28/02","68.50","CHF","1","68.50","Dépense","Courses","Emilian","0.00","68.50","-34.25","-34.25","28 février 2024 00:00",""
+Tricount Switzerland 🇨🇭 - exporté le 9 septembre 2024 18:09
