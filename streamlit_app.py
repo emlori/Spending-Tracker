@@ -80,6 +80,8 @@ else:
     df_filtered = df[(df['Mois'].isin(mois)) & (df['Année'].isin(annee))]
     df_filtered['Montant'] = df_filtered[f'Impacté à {personne}']
 
+nb_mois = len(df_filtered['Mois'].unique())
+
 # Affichage des indicateurs clés
 st.title("Dashboard de Suivi des Finances")
 
@@ -96,17 +98,17 @@ else:
 
 # Calcul du taux d'épargne moyen mensuel
 epargne_mensuelle = revenus_mensuels - depenses_mensuelles
-taux_epargne_moyen = epargne_mensuelle.mean() / revenus_mensuels.mean() * 100 if revenus_mensuels.mean() > 0 else 0
+taux_epargne_moyen = epargne_mensuelle/nb_mois / revenus_mensuels/nb_mois * 100 if revenus_mensuels/nb_mois > 0 else 0
 
 # Calcul du revenu mensuel moyen
-revenu_mensuel_moyen = revenus_mensuels.mean()
+revenu_mensuel_moyen = revenus_mensuels/nb_mois
 
 # Affichage des métriques
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Revenu Mensuel Moyen", f"{revenu_mensuel_moyen:.0f} CHF")
-col2.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles.mean():.0f} CHF")
+col2.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles/nb_mois:.0f} CHF")
 col3.metric("Taux d'Épargne Moyen Mensuel", f"{taux_epargne_moyen:.0f} %")
-col4.metric("Epargne Moyenne", f"{epargne_mensuelle.mean():.0f} CHF")
+col4.metric("Epargne Moyenne", f"{epargne_mensuelle/nb_mois:.0f} CHF")
 
 
 
@@ -210,7 +212,7 @@ else:
     depenses_combined['Total_Impact'] = depenses_combined['Impacté à Caps'] + depenses_combined['Impacté à Emilian']
     
     # Calculer la moyenne mensuelle des dépenses par catégorie
-    depenses_par_categorie_moyenne = depenses_combined.groupby('Catégorie')['Total_Impact'].mean().reset_index()
+    depenses_par_categorie_moyenne = depenses_combined.groupby('Catégorie')['Total_Impact']/nb_mois
 
 # Ajouter une colonne de pourcentage
 total_dépenses_moyenne = depenses_par_categorie_moyenne['Total_Impact'].sum()

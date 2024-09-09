@@ -1,4 +1,6 @@
 "Titre","Montant","Devise","Taux de change","Montant dans la devise du tricount (CHF)","Type de transaction","Catégorie","Payé par","Payé par Caps","Payé par Emilian","Impacté à Caps","Impacté à Emilian","Date & heure","URL des images"
+"Salaire","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","1 juillet 2024 00:00",""
+"Salaire","-2023.00","CHF","1","-2023.00","Rentrée d'argent","Salaire 💵","Caps","-2023.00","0.00","2023.00","0.00","2 juillet 2024 00:00",""
 "Bière 🍺","9.10","CHF","1","9.10","Dépense","Restaurants & Bars","Emilian","0.00","9.10","0.00","-9.10","9 septembre 2024 00:00",""
 "Casque retrouvé","5.00","CHF","1","5.00","Dépense","Autre","Emilian","0.00","5.00","-5.00","0.00","9 septembre 2024 00:00",""
 "Métro Lille Paris","13.40","EUR","0.945805","12.67","Dépense","Transport","Emilian","0.00","12.67","0.00","-12.67","9 septembre 2024 00:00",""
@@ -103,7 +105,6 @@
 "Planche apéro","31.00","CHF","1","31.00","Dépense","Restaurants & Bars","Emilian","0.00","31.00","-15.50","-15.50","2 août 2024 00:00",""
 "Frais de carte CA","2.00","EUR","0.961072","1.92","Dépense","Frais bancaires 🏦","Emilian","0.00","1.92","0.00","-1.92","2 août 2024 00:00",""
 "Swibeco","-180.00","CHF","1","-180.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-180.00","90.00","90.00","2 août 2024 00:00",""
-"Salaire","-2023.00","CHF","1","-2023.00","Rentrée d'argent","Salaire 💵","Caps","-2023.00","0.00","2023.00","0.00","1 août 2024 00:00",""
 "Salaire","-1967.00","CHF","1","-1967.00","Rentrée d'argent","Salaire 💵","Emilian","0.00","-1967.00","0.00","1967.00","2 août 2024 00:00",""
 "Conversion change","5.00","CHF","1","5.00","Dépense","Frais bancaires 🏦","Emilian","0.00","5.00","-2.50","-2.50","2 août 2024 00:00",""
 "Loyer","775.00","CHF","1","775.00","Dépense","Loyer & Charges","Caps","775.00","0.00","-775.00","0.00","1 août 2024 00:00",""
@@ -315,4 +316,4 @@
 "Courses Coop 29/02","41.70","CHF","1","41.70","Dépense","Courses","Caps","41.70","0.00","-20.85","-20.85","29 février 2024 00:00",""
 "Gifi (matelas etc.)","104.45","CHF","1","104.45","Dépense","Dépense unique ⚡","Emilian","0.00","104.45","-52.22","-52.23","11 mars 2024 00:00",""
 "Courses Denner 28/02","68.50","CHF","1","68.50","Dépense","Courses","Emilian","0.00","68.50","-34.25","-34.25","28 février 2024 00:00",""
-Tricount Switzerland 🇨🇭 - exporté le 9 septembre 2024 18:09
+Tricount Switzerland 🇨🇭 - exporté le 9 septembre 2024 19:13
