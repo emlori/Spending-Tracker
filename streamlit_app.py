@@ -98,22 +98,25 @@ else:
 
 # Calcul du taux d'épargne moyen mensuel
 epargne_mensuelle = revenus_mensuels - depenses_mensuelles
-taux_epargne_moyen = epargne_mensuelle/nb_mois / revenus_mensuels/nb_mois * 100 if revenus_mensuels/nb_mois > 0 else 0
+epargne_moyenne_mensuelle = epargne_mensuelle/nb_mois
 
 # Calcul du revenu mensuel moyen
 revenu_mensuel_moyen = revenus_mensuels/nb_mois
+taux_epargne_moyen = epargne_moyenne_mensuelle / revenu_mensuel_moyen * 100 if revenu_mensuel_moyen > 0 else 0
+
+depenses_mensuelles_moyen = revenu_mensuel_moyen/nb_mois
 
 # Affichage des métriques
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Revenu Mensuel Moyen", f"{revenu_mensuel_moyen:.0f} CHF")
-col2.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles/nb_mois:.0f} CHF")
+col2.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles_moyen:.0f} CHF")
 col3.metric("Taux d'Épargne Moyen Mensuel", f"{taux_epargne_moyen:.0f} %")
-col4.metric("Epargne Moyenne", f"{epargne_mensuelle/nb_mois:.0f} CHF")
+col4.metric("Epargne Moyenne", f"{epargne_moyenne_mensuelle:.0f} CHF")
 
 
 
 # Calcul du pourcentage des charges fixes sur le revenu
-categories_fixes = ["Loyer & Charges", "Transport", "Courses"]
+categories_fixes = ["Loyer & Charges", "Transport", "Courses", "Assurance"]
     
 # Calcul des pourcentages des charges fixes et variables sur le revenu en prenant en compte les filtres
 if personne == "Caps":
