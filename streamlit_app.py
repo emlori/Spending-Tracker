@@ -102,7 +102,7 @@ epargne_moyenne_mensuelle = epargne_mensuelle/nb_mois
 
 # Calcul du revenu mensuel moyen
 revenu_mensuel_moyen = revenus_mensuels/nb_mois
-taux_epargne_moyen = epargne_moyenne_mensuelle / revenu_mensuel_moyen * 100 if revenu_mensuel_moyen > 0 else 0
+taux_epargne_moyen = epargne_moyenne_mensuelle / revenu_mensuel_moyen * 100
 
 depenses_mensuelles_moyen = revenu_mensuel_moyen/nb_mois
 
@@ -199,12 +199,14 @@ depenses = df_filtered[df_filtered['Type de transaction'] == 'Dépense']
 if personne == "Caps":
     depenses_par_categorie_moyenne = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Caps'].sum().reset_index()
     # Calculer la moyenne par catégorie
-    depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Caps'].mean().reset_index()
+    depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Caps'].sum().reset_index()
+    depenses_par_categorie_moyenne/=nb_mois
     depenses_par_categorie_moyenne.rename(columns={'Impacté à Caps': 'Total_Impact'}, inplace=True)
 elif personne == "Emilian":
     depenses_par_categorie_moyenne = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Emilian'].sum().reset_index()
     # Calculer la moyenne par catégorie
-    depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Emilian'].mean().reset_index()
+    depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Emilian'].sum().reset_index()
+    depenses_par_categorie_moyenne/=nb_mois
     depenses_par_categorie_moyenne.rename(columns={'Impacté à Emilian': 'Total_Impact'}, inplace=True)
 else:
     depenses_caps = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Caps'].sum().reset_index()
@@ -215,7 +217,8 @@ else:
     depenses_combined['Total_Impact'] = depenses_combined['Impacté à Caps'] + depenses_combined['Impacté à Emilian']
     
     # Calculer la moyenne mensuelle des dépenses par catégorie
-    depenses_par_categorie_moyenne = depenses_combined.groupby('Catégorie')['Total_Impact']/nb_mois
+    depenses_par_categorie_moyenne = depenses_combined.groupby('Catégorie')['Total_Impact'].sum().reset_index()
+    depenses_par_categorie_moyenne/=nb_mois
 
 # Ajouter une colonne de pourcentage
 total_dépenses_moyenne = depenses_par_categorie_moyenne['Total_Impact'].sum()
