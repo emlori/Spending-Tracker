@@ -98,17 +98,18 @@ else:
 
 # Calcul du taux d'épargne moyen mensuel
 epargne_mensuelle = revenus_mensuels - depenses_mensuelles
-epargne_moyenne_mensuelle = epargne_mensuelle/nb_mois
+epargne_moyenne_mensuelle = epargne_mensuelle.sum() / nb_mois
 
 # Calcul du revenu mensuel moyen
-revenu_mensuel_moyen = revenus_mensuels/nb_mois
-taux_epargne_moyen = epargne_moyenne_mensuelle / revenu_mensuel_moyen * 100
+revenu_mensuel_moyen = revenus_mensuels.sum() / nb_mois
+taux_epargne_moyen = (epargne_moyenne_mensuelle / revenu_mensuel_moyen) * 100
 
-depenses_mensuelles_moyen = revenu_mensuel_moyen/nb_mois
+# Calcul des dépenses moyennes mensuelles
+depenses_mensuelles_moyen = depenses_mensuelles.sum() / nb_mois
 
 # Affichage des métriques
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("Revenu Mensuel Moyen", f"{revenu_mensuel_moyen:.0f} CHF")
+#col1.metric("Revenu Mensuel Moyen", f"{revenu_mensuel_moyen:.0f} CHF")
 col2.metric("Dépense Moyenne Mensuelle", f"{depenses_mensuelles_moyen:.0f} CHF")
 col3.metric("Taux d'Épargne Moyen Mensuel", f"{taux_epargne_moyen:.0f} %")
 col4.metric("Epargne Moyenne", f"{epargne_moyenne_mensuelle:.0f} CHF")
