@@ -199,27 +199,40 @@ depenses = df_filtered[df_filtered['Type de transaction'] == 'Dépense']
 # Calculer la moyenne mensuelle des dépenses par catégorie
 if personne == "Caps":
     depenses_par_categorie_moyenne = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Caps'].sum().reset_index()
-    # Calculer la moyenne par catégorie
+    # Convertir en nombres pour éviter les erreurs de type
+    depenses_par_categorie_moyenne['Impacté à Caps'] = pd.to_numeric(depenses_par_categorie_moyenne['Impacté à Caps'], errors='coerce')
+    
+    # Calculer la somme par catégorie et convertir en moyenne
     depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Caps'].sum().reset_index()
-    depenses_par_categorie_moyenne/=nb_mois
-    depenses_par_categorie_moyenne.rename(columns={'Impacté à Caps': 'Total_Impact'}, inplace=True)
+    depenses_par_categorie_moyenne['Total_Impact'] = depenses_par_categorie_moyenne['Impacté à Caps'] / nb_mois
+    depenses_par_categorie_moyenne.drop(columns='Impacté à Caps', inplace=True)
+
 elif personne == "Emilian":
     depenses_par_categorie_moyenne = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Emilian'].sum().reset_index()
-    # Calculer la moyenne par catégorie
+    # Convertir en nombres pour éviter les erreurs de type
+    depenses_par_categorie_moyenne['Impacté à Emilian'] = pd.to_numeric(depenses_par_categorie_moyenne['Impacté à Emilian'], errors='coerce')
+    
+    # Calculer la somme par catégorie et convertir en moyenne
     depenses_par_categorie_moyenne = depenses_par_categorie_moyenne.groupby('Catégorie')['Impacté à Emilian'].sum().reset_index()
-    depenses_par_categorie_moyenne/=nb_mois
-    depenses_par_categorie_moyenne.rename(columns={'Impacté à Emilian': 'Total_Impact'}, inplace=True)
+    depenses_par_categorie_moyenne['Total_Impact'] = depenses_par_categorie_moyenne['Impacté à Emilian'] / nb_mois
+    depenses_par_categorie_moyenne.drop(columns='Impacté à Emilian', inplace=True)
+
 else:
     depenses_caps = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Caps'].sum().reset_index()
     depenses_emilian = depenses.groupby(['Catégorie', depenses['Date'].dt.to_period('M')])['Impacté à Emilian'].sum().reset_index()
 
+    # Convertir en nombres pour éviter les erreurs de type
+    depenses_caps['Impacté à Caps'] = pd.to_numeric(depenses_caps['Impacté à Caps'], errors='coerce')
+    depenses_emilian['Impacté à Emilian'] = pd.to_numeric(depenses_emilian['Impacté à Emilian'], errors='coerce')
+
     # Fusionner les deux DataFrames pour obtenir une somme des deux impacts
-    depenses_combined = pd.merge(depenses_caps, depenses_emilian, on=['Catégorie', 'Date'], suffixes=('_Caps', '_Emilian'))
+    depenses_combined = pd.merge(depenses_caps, depenses_emilian, on=['Catégorie', 'Date'], how='outer', suffixes=('_Caps', '_Emilian'))
+    depenses_combined.fillna(0, inplace=True)  # Remplacer les valeurs NaN par 0
     depenses_combined['Total_Impact'] = depenses_combined['Impacté à Caps'] + depenses_combined['Impacté à Emilian']
     
-    # Calculer la moyenne mensuelle des dépenses par catégorie
+    # Calculer la somme totale par catégorie et convertir en moyenne
     depenses_par_categorie_moyenne = depenses_combined.groupby('Catégorie')['Total_Impact'].sum().reset_index()
-    depenses_par_categorie_moyenne/=nb_mois
+    depenses_par_categorie_moyenne['Total_Impact'] = depenses_par_categorie_moyenne['Total_Impact'] / nb_mois
 
 # Ajouter une colonne de pourcentage
 total_dépenses_moyenne = depenses_par_categorie_moyenne['Total_Impact'].sum()
@@ -232,6 +245,7 @@ fig_pie = px.pie(
     values='Total_Impact',
     title="Répartition des Dépenses Mensuelles par Catégorie"
 )
+
 
 # Mettre à jour les étiquettes du graphique pour n'afficher que les valeurs >= 1%
 fig_pie.update_traces(
