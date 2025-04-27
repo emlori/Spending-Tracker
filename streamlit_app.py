@@ -9,10 +9,19 @@ from datetime import datetime
 # Add authentication
 def check_password():
     """Returns `True` if the user had the correct password."""
-
     def password_entered():
         """Checks whether a password entered by the user is correct."""
-        if st.session_state["password"] == st.secrets["password"]:
+        if "password" not in st.session_state:
+            st.session_state["password_correct"] = False
+            return
+        
+        # Vérifier si les secrets sont configurés
+        if "passwords" not in st.secrets:
+            st.error("❌ Les secrets ne sont pas configurés. Veuillez configurer les secrets dans les paramètres de l'application.")
+            st.session_state["password_correct"] = False
+            return
+            
+        if st.session_state["password"] == st.secrets["passwords"]["password"]:
             st.session_state["password_correct"] = True
             del st.session_state["password"]  # Don't store password
         else:
