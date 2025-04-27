@@ -10,7 +10,12 @@ def convert_csv_to_base64(csv_file_path):
     base64_content = base64.b64encode(csv_content).decode('utf-8')
     
     # Créer le contenu pour le fichier secrets.toml
-    toml_content = f'tricount_data = """{base64_content}"""'
+    toml_content = f'''[passwords]
+password = "votre_mot_de_passe"
+
+[tricount_data]
+csv_data = """{base64_content}"""
+'''
     
     # Écrire dans un fichier temporaire
     with open('secrets_temp.toml', 'w') as file:

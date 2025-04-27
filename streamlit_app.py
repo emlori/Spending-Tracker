@@ -74,36 +74,56 @@ def extract_month_manual(date_str):
 
 # Charger et préparer les données
 def load_data():
-    data = pd.read_csv('Tricount_Switzerland.csv')
-    data['Date & heure'] = data['Date & heure'].astype(str)
-    data['Année'] = data['Date & heure'].apply(extract_year_manual)
-    data['Mois'] = data['Date & heure'].apply(extract_month_manual)
+    # Vérifier si les secrets sont configurés
+    if "tricount_data" not in st.secrets:
+        st.error("❌ Les données ne sont pas configurées. Veuillez configurer les secrets dans les paramètres de l'application.")
+        return pd.DataFrame()
+    
+    # Récupérer les données depuis les secrets
+    import base64
+    import io
+    
+    try:
+        # Décoder les données base64
+        csv_data = base64.b64decode(st.secrets["tricount_data"]["csv_data"])
+        
+        # Convertir en DataFrame
+        df = pd.read_csv(io.StringIO(csv_data.decode('utf-8')))
+        
+        # Traitement des données comme avant
+        df['Date & heure'] = df['Date & heure'].astype(str)
+        df['Année'] = df['Date & heure'].apply(extract_year_manual)
+        df['Mois'] = df['Date & heure'].apply(extract_month_manual)
 
-    mois_map = {
-        'janvier': 1, 'février': 2, 'mars': 3,
-        'avril': 4, 'mai': 5, 'juin': 6,
-        'juillet': 7, 'août': 8, 'septembre': 9,
-        'octobre': 10, 'novembre': 11, 'décembre': 12
-    }
+        mois_map = {
+            'janvier': 1, 'février': 2, 'mars': 3,
+            'avril': 4, 'mai': 5, 'juin': 6,
+            'juillet': 7, 'août': 8, 'septembre': 9,
+            'octobre': 10, 'novembre': 11, 'décembre': 12
+        }
 
-    data['Année'] = data['Année'].fillna(0).astype(int)
-    data = data.dropna(subset=['Année', 'Mois'])
-    data['Numéro Mois'] = data['Mois'].map(mois_map)
-    data['Date'] = pd.to_datetime(
-        data['Année'].astype(str) + '-' + 
-        data['Numéro Mois'].astype(str) + '-01', 
-        errors='coerce'
-    )
-    data = data.dropna(subset=['Date'])
-    montant_cols = ['Montant', 'Montant dans la devise du tricount (CHF)', 'Payé par Caps', 'Payé par Emilian', 'Impacté à Caps', 'Impacté à Emilian']
-    for col in montant_cols:
-        if col in data.columns:
-            data[col] = data[col].abs()
-    columns = ["Date", "Année", "Mois", "Type de transaction", "Catégorie", "Impacté à Caps", "Impacté à Emilian"]
-    df = data[columns]
-    df = df.dropna(subset=['Date'])
-    df = df.dropna(how='all')
-    return df
+        df['Année'] = df['Année'].fillna(0).astype(int)
+        df = df.dropna(subset=['Année', 'Mois'])
+        df['Numéro Mois'] = df['Mois'].map(mois_map)
+        df['Date'] = pd.to_datetime(
+            df['Année'].astype(str) + '-' + 
+            df['Numéro Mois'].astype(str) + '-01', 
+            errors='coerce'
+        )
+        df = df.dropna(subset=['Date'])
+        montant_cols = ['Montant', 'Montant dans la devise du tricount (CHF)', 'Payé par Caps', 'Payé par Emilian', 'Impacté à Caps', 'Impacté à Emilian']
+        for col in montant_cols:
+            if col in df.columns:
+                df[col] = df[col].abs()
+        columns = ["Date", "Année", "Mois", "Type de transaction", "Catégorie", "Impacté à Caps", "Impacté à Emilian"]
+        df = df[columns]
+        df = df.dropna(subset=['Date'])
+        df = df.dropna(how='all')
+        return df
+        
+    except Exception as e:
+        st.error(f"❌ Erreur lors du chargement des données: {str(e)}")
+        return pd.DataFrame()
 
 df = load_data()
 
