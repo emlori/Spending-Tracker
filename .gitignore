@@ -1,0 +1,23 @@
+# Fichiers de données sensibles
+Tricount_Switzerland.csv
+secrets_temp.toml
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+venv/
+env/
+.env
+
+# Fichiers de configuration locaux
+.streamlit/secrets.toml
+
+# Fichiers de logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db 

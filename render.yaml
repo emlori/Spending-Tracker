@@ -2,8 +2,18 @@ services:
   - type: web
     name: spending-tracker
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install -r requirements.txt
+      # Créer le dossier .streamlit s'il n'existe pas
+      mkdir -p .streamlit
     startCommand: streamlit run streamlit_app.py
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.12 
+        value: 3.10.12
+      - key: STREAMLIT_SERVER_ADDRESS
+        value: 0.0.0.0
+      - key: STREAMLIT_SERVER_PORT
+        value: 10000
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: true
+    healthCheckPath: /_stcore/health 
