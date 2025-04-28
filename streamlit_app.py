@@ -6,6 +6,14 @@ import plotly.graph_objects as go
 import calendar
 from datetime import datetime
 
+# Configuration de la page Streamlit
+st.set_page_config(
+    page_title="Dashboard de Suivi des Finances",
+    page_icon="💰",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 # Add authentication
 def check_password():
     """Returns `True` if the user had the correct password."""
@@ -43,9 +51,6 @@ def check_password():
     else:
         # Password correct.
         return True
-
-if not check_password():
-    st.stop()  # Do not continue if check_password is not True.
 
 # Fonction pour extraire l'année manuellement avec gestion des erreurs
 def extract_year_manual(date_str):
@@ -125,10 +130,12 @@ def load_data():
         st.error(f"❌ Erreur lors du chargement des données: {str(e)}")
         return pd.DataFrame()
 
-df = load_data()
+# Vérification du mot de passe
+if not check_password():
+    st.stop()  # Do not continue if check_password is not True.
 
-# Configuration de la page Streamlit
-st.set_page_config(page_title="Dashboard de Suivi des Finances", layout="wide")
+# Charger les données
+df = load_data()
 
 # Sidebar pour les filtres
 st.sidebar.header("Filtres")
