@@ -11,7 +11,7 @@ def convert_csv_to_base64(csv_file_path):
     
     # Créer le contenu pour le fichier secrets.toml
     toml_content = f'''[passwords]
-password = "votre_mot_de_passe"
+password = "azerty1234"
 
 [tricount_data]
 csv_data = """{base64_content}"""

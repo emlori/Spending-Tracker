@@ -13,7 +13,7 @@ Une application Streamlit pour suivre et visualiser vos dépenses et revenus, av
   - Graphique de répartition des dépenses et de l'épargne
 - 📅 **Filtres personnalisables** :
   - Sélection de période (début et fin)
-  - Filtrage par personne (Caps, Emilian, ou les deux)
+  - Filtrage par personne
 - 📈 **Indicateurs clés** :
   - Revenu mensuel moyen
   - Taux d'épargne moyen
